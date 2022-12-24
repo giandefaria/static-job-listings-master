@@ -10,6 +10,9 @@ export default function Principal() {
 
             </header>
             <main>
+                <section className='filters'>
+
+                </section>
 
             </main>
      </>

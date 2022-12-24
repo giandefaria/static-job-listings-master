@@ -1,0 +1,11 @@
+- [] adicionar background no header
+- [] criar o primeiro item da lista, o photosnap
+- [] criar o container da lista, e dentro dela terá duas divisórias, uma conterá a imagem, o tipo de vaga e as demais informações. Na outra div conterá os filtros
+- [] adicionar a imagem, a compania e os elementos de new e features, que só aparecerão se forem "true"
+- [] importar o título da vaga do json
+- [] importar os dados da data, tempo de serviço e localização
+- [] importar os filtros, que estão em 'role', 'level', 'languages' no json
+- [] fazer a página criar essa lista automaticamente 
+- [] Ao clicar no filtro, mostrar apenas as empresas que possuam essas informações
+- [] Ao clicar no filtro, deverá abrir uma nova caixa no campo filters. Terei a opção de excluir determinado filtro ou limpar todos ao clicar em clear. Só deverá aparecer os ítens que deem match com o filtro.
+- [] as divs com features true terão uma borda diferenciada. 
