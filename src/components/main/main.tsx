@@ -1,4 +1,5 @@
-import './main.css'
+import './main.css';
+import '../input-list/input-list';
 
 
 export default function Principal() {
@@ -13,7 +14,7 @@ export default function Principal() {
                 <section className='filters'>
 
                 </section>
-                
+
                 <section className="list">
 
                 </section>
