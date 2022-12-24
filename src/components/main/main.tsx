@@ -1,9 +1,19 @@
 import './main.css';
-import '../input-list/input-list';
+import { useEffect, useLayoutEffect } from 'react';
+import { jobList } from '../json-file/data';
+import { AddJobList } from '../input-list/input-list';
 
 
 export default function Principal() {
 
+    //useEfect utilizado para chamar a variável list somente após a rendereização. Antes disso ela acaba retornando null
+    useEffect(() => {
+        const list = document.querySelector('.list') as HTMLElement;
+        if (list != null) {
+            console.log(list);
+            AddJobList(jobList, list);
+        }
+    })
 
     return (
         <>  
@@ -18,10 +28,15 @@ export default function Principal() {
                 <section className="list">
 
                 </section>
-
+            
             </main>
      </>
+     
     )
-       
+
+        
 
 }
+
+
+
