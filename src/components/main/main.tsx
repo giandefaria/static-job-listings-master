@@ -10,7 +10,7 @@ export default function Principal() {
     useEffect(() => {
         console.log('fire')
         const list = document.querySelector('.list') as HTMLElement;
-        list.innerHTML= ''
+        list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez
         AddJobList(jobList, list);
 
     }, [Principal])
