@@ -8,12 +8,12 @@ export default function Principal() {
 
     //useEfect utilizado para chamar a variável list somente após a rendereização. Antes disso ela acaba retornando null
     useEffect(() => {
+        console.log('fire')
         const list = document.querySelector('.list') as HTMLElement;
-        if (list != null) {
-            console.log(list);
-            AddJobList(jobList, list);
-        }
-    })
+        list.innerHTML= ''
+        AddJobList(jobList, list);
+
+    }, [Principal])
 
     return (
         <>  
