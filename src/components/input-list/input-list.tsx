@@ -7,9 +7,8 @@ const list = document.querySelector('.list');
 //aqui estou criando uma função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista
 const addJobList = (array: Array<any>, element: HTMLElement) => {
     array.forEach(item => {
-        //atribuo li a criar um novo elemento li e indico o classname desse li além do item que ela conterá
-        const li: HTMLElement = document.createElement('li');
-        li.className = "list-item";
+        //atribuo na const li a criação de um novo elemento html que será do tipo li.
+        li.className = "list-item"; //adiciono nome da classe dessa Li
         li.textContent = item.company; //aqui estou indicando, inicialmente, que conterá o nome da compania dentro
         element.appendChild(li); //cria um novo elemento, que sera uma li
     })
