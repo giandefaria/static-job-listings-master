@@ -18,5 +18,6 @@ main  {
     width: 80vw;
     height: 800px;
     background: lightpink;
+    margin: 0 auto;
 
 }
