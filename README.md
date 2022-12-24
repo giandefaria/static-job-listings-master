@@ -24,19 +24,11 @@
 
 # Proposta do projeto <a name="id01"></a>
 
-O desafio desse projeto é montar uma pagina que faz uma conexão com uma API responsável por buscar a localização do IP do usuário (ou o IP informado), bem como a localização de algum domínio informado, e mostrar essa localização no mapa renderizado na página.
-
-Esse projeto faz a comunicação com a API https://geo.ipify.org/, a qual retorna a localização do IP ou domínio informado. Para o mapa, foi utilizado o Leaflet (https://react-leaflet.js.org/docs/example-events/).
-
-Após realizarmos a requisição da API e termos retornado a localização do IP/Domínio informado, esses valores são renderizados no mapa logo abaixo.
-
-Para realizar a requisição, basta informar o endereço de IP ou o domínio no input da página e apertar a tecla enter (ou clicar no botão ao lado do input).
+(Em construção)
 
 # Alerta <a name="id02"> </a>
 
-Um defeito do serviço de localização de IP/Domínio, é que existe um número limmitado de requisições que podem ser realizadas. Cada requisição desconta um "crédito" que o usuário tem na página, e o site oferece 1000 créditos ao novo usuário. 
-
-Caso a página não seja renderizada e dê erro, provavelmente é porque acabou o crédito na key indicada na API e eu ainda não percebi o problema. 
+(Em construção)
 
 
 
