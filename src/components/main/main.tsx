@@ -1,7 +1,7 @@
 import './main.css'
 
 
-export default function principal() {
+export default function Principal() {
 
 
     return (
