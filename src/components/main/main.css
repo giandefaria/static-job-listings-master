@@ -10,7 +10,8 @@ html {
 header {
     width: 100vw;
     height: 200px;
-    background: purple;
+    background: url(../../assets/bg-header-desktop.svg) no-repeat;
+    background-size: cover;
 
 }
 
