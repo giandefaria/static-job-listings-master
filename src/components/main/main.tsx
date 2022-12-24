@@ -13,6 +13,10 @@ export default function Principal() {
                 <section className='filters'>
 
                 </section>
+                
+                <section className="list">
+
+                </section>
 
             </main>
      </>
