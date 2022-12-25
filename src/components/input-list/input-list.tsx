@@ -8,6 +8,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         console.log(array);
         console.log(itemArray);
         li.className = "list-item"; //adiciono a classe que terá esse novo elemento
+        li.id = itemArray.id;
         li.innerHTML = 
         `
             <section>
