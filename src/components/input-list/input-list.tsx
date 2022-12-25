@@ -29,7 +29,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         console.log('repete')
     
         //add função verifNew e verifFeatured, que buscará no array constante na data de New e Featured são true ou false
-        //se forem true, retornarão no elemento html uma template string com o respectivo texto, do contrário o retorno será em branco.
+        //se forem true, retornarão uma template string com o respectivo elemento html, com a classe e conteúdo, do contrário o retorno será em branco.
         function verifNew() {
             if (itemArray.new == true) {
                 return (
