@@ -26,3 +26,8 @@ main  {
     margin: 0 auto;
 
 }
+
+.list-item {
+    list-style: none;
+    
+}
