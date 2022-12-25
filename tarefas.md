@@ -4,7 +4,7 @@
 - [X] criar o primeiro item da lista, o photosnap
 - [X] corrigir caminho das imagens no arquivo data
 - [X] criar o container da lista, e dentro dela terá duas divisórias, uma conterá a imagem, o tipo de vaga e as demais informações. Na outra div conterá os filtros
-- [] adicionar a imagem, a compania e os elementos de new e features, que só aparecerão se forem "true"
+- [x] adicionar a imagem, a compania e os elementos de new e features, que só aparecerão se forem "true"
 - [] importar o título da vaga do json
 - [] importar os dados da data, tempo de serviço e localização
 - [] importar os filtros, que estão em 'role', 'level', 'languages' no json
