@@ -1,7 +1,8 @@
 - [X] adicionar background no header
 - [X] ajustar largura do html e alterar cor de fundo
 - [X] adicionar itens em json em uma constante 
-- [] criar o primeiro item da lista, o photosnap
+- [X] criar o primeiro item da lista, o photosnap
+- [] corrigir caminho das imagens no arquivo data
 - [] criar o container da lista, e dentro dela terá duas divisórias, uma conterá a imagem, o tipo de vaga e as demais informações. Na outra div conterá os filtros
 - [] adicionar a imagem, a compania e os elementos de new e features, que só aparecerão se forem "true"
 - [] importar o título da vaga do json
