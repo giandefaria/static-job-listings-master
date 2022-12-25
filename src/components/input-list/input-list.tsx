@@ -18,10 +18,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
             </section>
             <section>
             </section
-        
-        
-        
-        `
+        ` //estou adicionando uma template string no innerHTML
         
         
         //li.innerHTML = itemArray.company; //aqui estou indicando, inicialmente, que conterá o nome da compania dentro
