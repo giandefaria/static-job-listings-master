@@ -37,6 +37,7 @@ main  {
 
 .company-name{
     display: inline-block;
+    color: hsl(180, 29%, 50%);
 }
 
 .new {
