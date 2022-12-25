@@ -1,6 +1,13 @@
-import photosnapLogo from "../../assets/photosnap.svg"
-import manageLogo from "../../assets/manage.svg"
-import accountLogo from "../../assets/account.svg"
+import photosnapLogo from "../../assets/photosnap.svg";
+import manageLogo from "../../assets/manage.svg";
+import accountLogo from "../../assets/account.svg";
+import myhomeLogo from "../../assets/myhome.svg";
+import loopstudiosLogo from "../../assets/loop-studios.svg";
+import faceltLogo from "../../assets/faceit.svg";
+import shortlyLogo from "../../assets/shortly.svg";
+import insureLogo from "../../assets/insure.svg";
+import eyecamLogo from "../../assets/eyecam-co.svg"
+import airfilterLogo from "../../assets/the-air-filter-company.svg";
 
 export const jobList = [
     {
@@ -51,7 +58,7 @@ export const jobList = [
     {
       "id": 4,
       "company": "MyHome",
-      "logo": "../../assets/myhome.svg",
+      "logo": myhomeLogo,
       "new": false,
       "featured": false,
       "position": "Junior Frontend Developer",
@@ -66,7 +73,7 @@ export const jobList = [
     {
       "id": 5,
       "company": "Loop Studios",
-      "logo": "../../assets/loop-studios.svg",
+      "logo": loopstudiosLogo,
       "new": false,
       "featured": false,
       "position": "Software Engineer",
@@ -81,7 +88,7 @@ export const jobList = [
     {
       "id": 6,
       "company": "FaceIt",
-      "logo": "../../assets/faceit.svg",
+      "logo": faceltLogo,
       "new": false,
       "featured": false,
       "position": "Junior Backend Developer",
@@ -96,7 +103,7 @@ export const jobList = [
     {
       "id": 7,
       "company": "Shortly",
-      "logo": "../../assets/shortly.svg",
+      "logo": shortlyLogo,
       "new": false,
       "featured": false,
       "position": "Junior Developer",
@@ -111,7 +118,7 @@ export const jobList = [
     {
       "id": 8,
       "company": "Insure",
-      "logo": "../../assets/insure.svg",
+      "logo": insureLogo,
       "new": false,
       "featured": false,
       "position": "Junior Frontend Developer",
@@ -126,7 +133,7 @@ export const jobList = [
     {
       "id": 9,
       "company": "Eyecam Co.",
-      "logo": "../../assets/eyecam-co.svg",
+      "logo": eyecamLogo,
       "new": false,
       "featured": false,
       "position": "Full Stack Engineer",
@@ -141,7 +148,7 @@ export const jobList = [
     {
       "id": 10,
       "company": "The Air Filter Company",
-      "logo": "../../assets/the-air-filter-company.svg",
+      "logo": airfilterLogo,
       "new": false,
       "featured": false,
       "position": "Front-end Dev",
