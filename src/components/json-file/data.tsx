@@ -1,8 +1,12 @@
+import photosnapLogo from "../../assets/photosnap.svg"
+import manageLogo from "../../assets/manage.svg"
+import accountLogo from "../../assets/account.svg"
+
 export const jobList = [
     {
       "id": 1,
       "company": "Photosnap",
-      "logo": "../../assets/photosnap.svg",
+      "logo": photosnapLogo,
       "new": true,
       "featured": true,
       "position": "Senior Frontend Developer",
@@ -17,7 +21,7 @@ export const jobList = [
     {
       "id": 2,
       "company": "Manage",
-      "logo": "../../assets/manage.svg",
+      "logo": manageLogo,
       "new": true,
       "featured": true,
       "position": "Fullstack Developer",
@@ -32,7 +36,7 @@ export const jobList = [
     {
       "id": 3,
       "company": "Account",
-      "logo": "../../assets/account.svg",
+      "logo": accountLogo,
       "new": true,
       "featured": false,
       "position": "Junior Frontend Developer",

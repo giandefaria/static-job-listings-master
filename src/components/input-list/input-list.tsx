@@ -6,11 +6,13 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         //atribuo na const li a criação de um novo elemento html que será do tipo li
         const li = document.createElement('li') as HTMLElement;
         console.log(array);
+        console.log(itemArray);
         li.className = "list-item"; //adiciono a classe que terá esse novo elemento
         li.innerHTML = 
         `
             <section>
                 <div>
+                    <img src="${itemArray.logo}" alt="logo" />
                 </div>
                 <div>
                     <h2>${itemArray.company}</h2>
