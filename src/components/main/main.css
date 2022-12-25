@@ -38,3 +38,10 @@ main  {
 .company-name{
     display: inline-block;
 }
+
+.new {
+    background: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 20px;
+    padding: 2px 8px;
+}

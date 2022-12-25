@@ -16,7 +16,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
                     <img src="${itemArray.logo}" alt="logo" />
                 </div>
                 <div>
-                    <h2 class="company-name">${itemArray.company}</h2> <span class="new">${verifNew()}</span> <span class="featured">${verifFeatured()}</span>
+                    <h2 class="company-name">${itemArray.company}</h2> ${verifNew()} ${verifFeatured()}
                 </div>
             </section>
             <section class="tags">
@@ -33,7 +33,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         function verifNew() {
             if (itemArray.new == true) {
                 return (
-                 `NEW!`  
+                 `<span class="new">NEW!</span>`  
                 )
                                 
             } else {
@@ -43,7 +43,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         
         function verifFeatured() {
             if (itemArray.featured == true) {
-                return (`FEATURED`)
+                return (`<span class="featured">FEATURED</span>`)
             } else {
                 return(``)
             }
