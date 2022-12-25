@@ -34,3 +34,7 @@ main  {
     display: flex;
     gap: 20px;
 }
+
+.company-name{
+    display: inline-block;
+}
