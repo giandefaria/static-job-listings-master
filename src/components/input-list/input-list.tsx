@@ -1,7 +1,7 @@
 
-//aqui estou criando uma função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista.
+//aqui estou criando uma arrow função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista.
 export const AddJobList = (array: Array<any>, element: HTMLElement) => {
-    //para cada indice do array, será executada uma função, que receberá o parametro item.
+    //faço um map do array indicado como parâmetro. Para cada indice do array, será executada a arrow function, que receberá o parametro item.
     array.map(itemArray => {
         //atribuo na const li a criação de um novo elemento html que será do tipo li
         const li = document.createElement('li') as HTMLElement;
@@ -16,7 +16,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
                     <img src="${itemArray.logo}" alt="logo" />
                 </div>
                 <div>
-                    <h2>${itemArray.company}</h2>
+                    <h2>${itemArray.company}</h2> <span class="new">${verifNew()}</span> <span class="featured">${verifFeatured()}</span>
                 </div>
             </section>
             <section class="tags">
@@ -27,8 +27,28 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         //li.innerHTML = itemArray.company; //aqui estou indicando, inicialmente, que conterá o nome da compania dentro
         element.appendChild(li); //cria um novo elemento, que sera uma li
         console.log('repete')
-
+    
+        //add função verifNew e verifFeatured, que buscará no array constante na data de New e Featured são true ou false
+        //se forem true, retornarão no elemento html uma template string com o respectivo texto, do contrário o retorno será em branco.
+        function verifNew() {
+            if (itemArray.new == true) {
+                return (
+                 `NEW!`  
+                )
+                                
+            } else {
+                return (``)
+            }
+        }
+        
+        function verifFeatured() {
+            if (itemArray.featured == true) {
+                return (`FEATURED`)
+            } else {
+                return(``)
+            }
+        }
            
-    })
-}
+    })//final do array.map
+}//final da arrow function da const AddJobList
 
