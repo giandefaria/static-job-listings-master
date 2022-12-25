@@ -7,7 +7,24 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         const li = document.createElement('li') as HTMLElement;
         console.log(array);
         li.className = "list-item"; //adiciono a classe que terá esse novo elemento
-        li.innerHTML = itemArray.company; //aqui estou indicando, inicialmente, que conterá o nome da compania dentro
+        li.innerHTML = 
+        `
+            <section>
+                <div>
+                </div>
+                <div>
+                    <h2>${itemArray.company}</h2>
+                </div>
+            </section>
+            <section>
+            </section
+        
+        
+        
+        `
+        
+        
+        //li.innerHTML = itemArray.company; //aqui estou indicando, inicialmente, que conterá o nome da compania dentro
         element.appendChild(li); //cria um novo elemento, que sera uma li
         console.log('repete')
 
