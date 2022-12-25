@@ -28,5 +28,8 @@ main  {
 
 .list-item {
     list-style: none;
+}
 
+.job-information{
+    display: flex;
 }
