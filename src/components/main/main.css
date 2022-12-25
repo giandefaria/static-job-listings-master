@@ -26,8 +26,17 @@ main  {
 
 }
 
+.list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
 .list-item {
     list-style: none;
+    background: white;
+    box-shadow: 0px 11px 12px -4px #8382823b;
 }
 
 .job-information{
