@@ -22,7 +22,6 @@ export default function Principal() {
             </header>
             <main>
                 <section className='filters'>
-                    <img src={require("../../assets/photosnap.svg")} alt="logo" />
 
                 </section>
 
