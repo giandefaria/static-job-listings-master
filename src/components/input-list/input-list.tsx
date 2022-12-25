@@ -15,11 +15,11 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
                 <div>
                     <img src="${itemArray.logo}" alt="logo" />
                 </div>
-                <div>
+                <div className="job-information">
                     <h2>${itemArray.company}</h2>
                 </div>
             </section>
-            <section>
+            <section className ="tags">
             </section
         ` //estou adicionando uma template string no innerHTML
         
