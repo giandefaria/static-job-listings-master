@@ -32,4 +32,5 @@ main  {
 
 .job-information{
     display: flex;
+    gap: 20px;
 }
