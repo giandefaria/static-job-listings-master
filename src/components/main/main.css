@@ -5,8 +5,8 @@
 
 html {
     max-width: 1200px;
-
     margin: 0 auto;
+    font-family: 'League Spartan', sans-serif;
 
 }
 
@@ -23,6 +23,7 @@ main  {
     width: 100%;
     background: hsl(180, 52%, 96%);
     margin: 0 auto;
+    font-family: 'League Spartan', sans-serif;
 
 }
 
