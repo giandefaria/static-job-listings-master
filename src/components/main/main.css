@@ -48,6 +48,13 @@ main  {
     gap: 20px;
 }
 
+.company-information {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .company-name{
     display: inline-block;
     color: hsl(180, 29%, 50%);
