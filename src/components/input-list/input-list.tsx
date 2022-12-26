@@ -48,6 +48,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         //dentro de cada map, será executado um loop com o for de acordo com o lenght do array naquele objeto.
         for (let i = 0; i < itemArray.languages.length; i++) {
             const creatPLanguages = document.createElement('p');
+            creatPLanguages.className = 'languages'
             creatPLanguages.textContent = itemArray.languages[i]; //é criado um <p> com o ítem do indice do loop          
             creatSection.appendChild(creatPLanguages)
 
@@ -82,3 +83,5 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
     })//final do array.map
 }//final da arrow function da const AddJobList
 
+
+let language = document.querySelectorAll('.languages');
