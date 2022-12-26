@@ -47,10 +47,10 @@ main  {
 .job-information{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .company-information {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -65,14 +65,14 @@ main  {
     background: hsl(180, 29%, 50%);
     color: white;
     border-radius: 20px;
-    padding: 2px 8px;
+    padding: 5px 8px 2px;
 }
 
 .featured {
     background: hsl(180, 14%, 20%);
     color: white;
     border-radius: 20px;
-    padding: 2px 8px;
+    padding: 5px 8px 2px;
 }
 
 .information{
