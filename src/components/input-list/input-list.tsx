@@ -86,7 +86,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
 
     })//final do array.map
 
-    captureElements();
+    captureElements(); //após mapear os elementos, essa função será executada
 
 }//final da arrow function da const AddJobList
 
