@@ -5,8 +5,6 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
     array.map(itemArray => {
         //atribuo na const li a criação de um novo elemento html que será do tipo li
         const li = document.createElement('li') as HTMLElement;
-        console.log(array);
-        console.log(itemArray);
         li.className = "list-item"; //adiciono a classe que terá esse novo elemento
         li.id = itemArray.id;
         li.innerHTML =
@@ -46,7 +44,6 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         //aqui eu adiciono os itens constantes no array language dentro da section criada
         //para cada item será executado um loop
         for (let i = 0; i < itemArray.languages.length; i++) {
-            console.log(itemArray.languages[i]);
             const creatPLanguages = document.createElement('p');
             creatPLanguages.textContent = itemArray.languages[i]; //é criado um <p> com o ítem do indice do loop          
             creatSection.appendChild(creatPLanguages)
@@ -55,7 +52,6 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
 
         //agora um for para adicionar as ferramentas exigidas pela vaga, constantes no campo "tools" do array
         for (let i = 0; i < itemArray.tools.length; i++) {
-            console.log(itemArray.tools[i]);
             const creatPTools = document.createElement('p');
             creatPTools.textContent = itemArray.tools[i]; //é criado um <p> com o ítem do indice do loop          
             creatSection.appendChild(creatPTools);
