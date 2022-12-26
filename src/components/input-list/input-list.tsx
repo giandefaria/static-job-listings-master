@@ -4,6 +4,8 @@
 import { useEffect } from "react";
 
 let language: NodeListOf<Element>;
+let stack: NodeListOf<Element>;
+let tools: NodeListOf<Element>;
 
 //no arquivo main.tsx foi indicado o objeto em json constante em data.tsx e o elemento do html com classe 'list'
 export const AddJobList = (array: Array<any>, element: HTMLElement) => {
@@ -41,8 +43,9 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
 
         //adicionando o item do array denominado "role", onde diz se é a vaga é para front, back, ou fullstack
         const creatPRole = document.createElement('p');
+        creatPRole.className = 'stack';
         creatPRole.textContent = itemArray.role;
-        creatSection.appendChild(creatPRole)
+        creatSection.appendChild(creatPRole);
 
         //adicionando o nível da vaga (junior, pleno, senior)
         const creatPLevel = document.createElement('p')
@@ -53,9 +56,9 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         //dentro de cada map, será executado um loop com o for de acordo com o lenght do array naquele objeto.
         for (let i = 0; i < itemArray.languages.length; i++) {
             const creatPLanguages = document.createElement('p');
-            creatPLanguages.className = 'languages'
+            creatPLanguages.className = 'languages';
             creatPLanguages.textContent = itemArray.languages[i]; //é criado um <p> com o ítem do indice do loop          
-            creatSection.appendChild(creatPLanguages)
+            creatSection.appendChild(creatPLanguages);
 
         }
 
@@ -85,13 +88,13 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         }
 
     })//final do array.map
-
-    captureElements(); //após mapear os elementos, essa função será executada
+    captureElementsStack(); //após mapear os elementos, essa função será executada
+    captureElementsLanguage(); //após mapear os elementos, essa função será executada
 
 }//final da arrow function da const AddJobList
 
 
-function captureElements() {
+function captureElementsLanguage() {
     //capturo todos os elementos com a classe languages e faço um índice deles no for.
     //ao elemento ser clicado, retornará 'ok' no console.
     language = document.querySelectorAll('.languages');
@@ -100,6 +103,19 @@ function captureElements() {
         language[i].addEventListener('click', () => {
 
             console.log('ok');
+        })
+    }
+}
+
+function captureElementsStack() {
+    //capturo todos os elementos com a classe stack e faço um índice deles no for.
+    //ao elemento ser clicado, retornará 'okStack' no console.
+    stack = document.querySelectorAll('.stack');
+    for (let i = 0; i < stack.length; i++) {
+        console.log(stack[i]);
+        stack[i].addEventListener('click', () => {
+
+            console.log('okStack');
         })
     }
 }
