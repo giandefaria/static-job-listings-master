@@ -96,4 +96,5 @@ main  {
     color: hsl(180, 29%, 50%);
     background: hsl(180, 31%, 95%);
     padding: 5px 10px;
+    cursor: pointer;
 }
