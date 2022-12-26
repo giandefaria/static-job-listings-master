@@ -1,5 +1,10 @@
 
 //aqui estou criando uma arrow função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista de empresas.
+
+import { useEffect } from "react";
+
+let language;
+
 //no arquivo main.tsx foi indicado o objeto em json constante em data.tsx e o elemento do html com classe 'list'
 export const AddJobList = (array: Array<any>, element: HTMLElement) => {
     //faço um map do array indicado como parâmetro. Para cada indice do array, será executada a arrow function, que receberá o parametro item.
@@ -79,9 +84,13 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
             }
         }
 
-
     })//final do array.map
+    
+    useEffect(()=>{
+        language = document.querySelectorAll('.languages');
+    });
 }//final da arrow function da const AddJobList
 
 
-let language = document.querySelectorAll('.languages');
+
+
