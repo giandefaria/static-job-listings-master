@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 
-let language;
+let language: NodeListOf<Element>;
 
 //no arquivo main.tsx foi indicado o objeto em json constante em data.tsx e o elemento do html com classe 'list'
 export const AddJobList = (array: Array<any>, element: HTMLElement) => {
@@ -85,10 +85,15 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         }
 
     })//final do array.map
-    
-    useEffect(()=>{
+
         language = document.querySelectorAll('.languages');
-    });
+        for (let i = 0; i < language.length; i++) {
+            console.log(language[i]);
+            language[i].addEventListener('click', () => {
+
+                console.log('ok');
+            })
+        }
 }//final da arrow function da const AddJobList
 
 
