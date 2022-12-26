@@ -86,5 +86,7 @@ main  {
 }
 
 .tags {
+    margin-right: 40px;
     display: flex;
+    gap: 20px;
 }
