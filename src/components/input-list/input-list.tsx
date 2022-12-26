@@ -14,8 +14,10 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
                 <div>
                     <img src="${itemArray.logo}" alt="logo" />
                 </div>
-                <div>
-                    <h1 class="company-name">${itemArray.company}</h1> ${verifNew()} ${verifFeatured()}
+                <div class="company-information">
+                    <div> 
+                        <h1 class="company-name">${itemArray.company}</h1> ${verifNew()} ${verifFeatured()}
+                    </div>
                     <h2 class="position-name">${itemArray.position}</h2>
                     <div class="information">
                         <li>${itemArray.postedAt}</li> <li class="dot">${itemArray.contract}</li> <li class="dot">${itemArray.location}</li>
