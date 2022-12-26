@@ -86,6 +86,8 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
 
     })//final do array.map
 
+        //capturo todos os elementos com a classe languages e faço um índice deles no for.
+        //ao elemento ser clicado, retornará 'ok' no console.
         language = document.querySelectorAll('.languages');
         for (let i = 0; i < language.length; i++) {
             console.log(language[i]);
