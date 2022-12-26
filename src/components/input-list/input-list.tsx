@@ -43,7 +43,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         creatSection.appendChild(creatPLevel);
 
         //aqui eu adiciono os itens constantes no array language dentro da section criada
-        //para cada item será executado um loop
+        //dentro de cada map, será executado um loop com o for de acordo com o lenght do array naquele objeto.
         for (let i = 0; i < itemArray.languages.length; i++) {
             const creatPLanguages = document.createElement('p');
             creatPLanguages.textContent = itemArray.languages[i]; //é criado um <p> com o ítem do indice do loop          
