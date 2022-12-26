@@ -61,17 +61,14 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
             creatSection.appendChild(creatPTools);
         }
 
-        //add função verifNew e verifFeatured, que buscará no array constante na data de New e Featured são true ou false
+        //criei função verifNew e verifFeatured, que buscará no array constante na data de New e Featured são true ou false
         //se forem true, retornarão uma template string com o respectivo elemento html, com a classe e conteúdo, do contrário o retorno será em branco.
         function verifNew() {
             if (itemArray.new == true) {
-                return (
-                    `<span class="new">NEW!</span>`
-                )
-
+                return (`<span class="new">NEW!</span>`)
             } else {
                 return (``)
-            }
+              }
         }
 
         function verifFeatured() {
