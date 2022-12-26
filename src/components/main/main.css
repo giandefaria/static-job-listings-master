@@ -81,3 +81,7 @@ main  {
     line-height: 0px;
     margin-right: 15px;
 }
+
+.tags {
+    display: flex;
+}
