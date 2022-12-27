@@ -1,7 +1,8 @@
 
 //aqui estou criando uma arrow função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista de empresas.
-
+import '../input-filter/input-filter'
 import { useEffect } from "react";
+import { createFilter } from '../input-filter/input-filter';
 
 let stack: NodeListOf<Element>;
 let level: NodeListOf<Element>;
@@ -142,7 +143,7 @@ function captureElementsTools() {
     tools = document.querySelectorAll('.tools');
     for (let i = 0; i < tools.length; i++) {
         tools[i].addEventListener('click', () => {
-
+            createFilter(tools, i);
             console.log('okTools');
         })
     }
