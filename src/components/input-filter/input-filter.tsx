@@ -1,4 +1,4 @@
-import { filter } from '../main/main'
+import { clearAllFilter, filter } from '../main/main'
 
 //função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do índice daquela tag, informações necessárias para especificar qual a tag clicada.
 export function createFilter(tags: any, i : number) {
@@ -15,7 +15,14 @@ export function createFilter(tags: any, i : number) {
         selectedfilter.textContent = tags[i].innerHTML;  // o que conterá dentro desse novo parágrafo
         console.log(tags[i].innerHTML);
         filter.appendChild(selectedfilter); //esse novo parágrafo será criado dentro do elemento de classe filter
+        createClearAllFilterContent();
         
     } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado
 
 }
+
+
+function createClearAllFilterContent() {
+    clearAllFilter.innerHTML = 'Clear'
+
+};

@@ -4,6 +4,7 @@ import { jobList } from '../json-file/data';
 import { AddJobList } from '../input-list/input-list';
 
 export let filter: HTMLElement;
+export let clearAllFilter: HTMLElement;
 
 export default function Principal() {
 
@@ -12,6 +13,7 @@ export default function Principal() {
         console.log('fire')
         const list = document.querySelector('.list') as HTMLElement;
         filter = document.querySelector('.filters') as HTMLElement
+        clearAllFilter = document.querySelector('.clear-all') as HTMLElement
         list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez. A repetição dupla é causada pelo react.strictmode localizado no index.tsx
         AddJobList(jobList, list);
 
@@ -23,14 +25,14 @@ export default function Principal() {
 
             </header>
             <main>
-                <section className='filters'>
+                <section>
+                    <div className='filters'></div>
+
+                    <div className='clear-all'></div>
 
                 </section>
 
-                <section>
-                    <div className='list'></div>
-                    <div className='clear-all'></div>
-
+                <section className='list'>
                 </section>
             
             </main>
