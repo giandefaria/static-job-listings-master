@@ -1,5 +1,5 @@
 import { clearAllFilter, filter, filterContent } from '../main/main'
-//import {closeIcon} from '../../assets/icon-remove.svg'
+
 
 //função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do índice daquela tag, informações necessárias para especificar qual a tag clicada.
 export function createFilter(tags: any, i : number) {
@@ -33,6 +33,6 @@ export function createFilter(tags: any, i : number) {
 
 function createClearAllFilterContent() {
     clearAllFilter.innerHTML = 'Clear'
-    filterContent.classList.add('filters-content-active');
+    filterContent.classList.add('filters-content-active') //ativo a classe do filtercontent;
 
 };
