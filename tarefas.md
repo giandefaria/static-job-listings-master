@@ -5,13 +5,13 @@
 - [X] corrigir caminho das imagens no arquivo data
 - [X] criar o container da lista, e dentro dela terá duas divisórias, uma conterá a imagem, o tipo de vaga e as demais informações. Na outra div conterá os filtros
 - [x] adicionar a imagem, a compania e os elementos de new e features, que só aparecerão se forem "true"
-- [] importar as tags, que estão em 'role', 'level', 'languages' no json
+- [X] importar as tags, que estão em 'role', 'level', 'languages' no json
 - [X] importar o título da vaga do json
 - [X] importar os dados da data, tempo de serviço e localização
-- [] ao clicar em alguma tag, adiciona ela no campo de tags
+- [x] ao clicar em alguma tag, adiciona ela no campo de tags
 - [] crio uma constante para filtragem, que terá o parametro da informação que quero que seja filtrada
 - [] será indicada a função de addicionar na lista, mas no primeiro parmaetro não será o array, e sim o nome da constante do filtro.
-- [] fazer a página criar essa lista automaticamente 
+- [X] fazer a página criar essa lista automaticamente 
 - [] Ao clicar no filtro, mostrar apenas as empresas que possuam essas informações
 - [] Ao clicar no filtro, deverá abrir uma nova caixa no campo filters. Terei a opção de excluir determinado filtro ou limpar todos ao clicar em clear. Só deverá aparecer os ítens que deem match com o filtro.
 - [] as divs com features true terão uma borda diferenciada. 
