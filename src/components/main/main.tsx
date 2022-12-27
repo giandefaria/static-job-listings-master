@@ -27,7 +27,9 @@ export default function Principal() {
 
                 </section>
 
-                <section className="list">
+                <section>
+                    <div  className='list'></div>
+                    <div className='clear-all'></div>
 
                 </section>
             
