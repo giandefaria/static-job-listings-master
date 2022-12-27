@@ -27,11 +27,12 @@ main  {
 
 }
 
-.filters-content {
+.filters-content-active {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
+    padding: 20px 40px;
 
 }
 

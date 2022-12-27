@@ -3,6 +3,7 @@ import { useEffect, useLayoutEffect } from 'react';
 import { jobList } from '../json-file/data';
 import { AddJobList } from '../input-list/input-list';
 
+export let filterContent: HTMLElement;
 export let filter: HTMLElement;
 export let clearAllFilter: HTMLElement;
 
@@ -12,6 +13,7 @@ export default function Principal() {
     useEffect(() => {
         console.log('fire')
         const list = document.querySelector('.list') as HTMLElement;
+        filterContent = document.querySelector('.filters-content') as HTMLElement;
         filter = document.querySelector('.filters') as HTMLElement
         clearAllFilter = document.querySelector('.clear-all') as HTMLElement
         list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez. A repetição dupla é causada pelo react.strictmode localizado no index.tsx
