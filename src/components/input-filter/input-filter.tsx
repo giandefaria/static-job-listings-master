@@ -12,7 +12,7 @@ export function createFilter(tags: any, i : number) {
     }
     
     if (tagOnList == false) {
-        const createDiv = document.createElement('div')
+        const createDiv = document.createElement('div') //cria uma div
         createDiv.className = 'tag-and-button'
         const createButton = document.createElement('button'); //crio o botão com o ícone de excluir a div
         createButton.className = 'close-button';
@@ -22,8 +22,8 @@ export function createFilter(tags: any, i : number) {
         console.log(tags[i].innerHTML);
         filter.appendChild(createDiv); //esse nova div será criada dentro do elemento de classe filter
         createDiv.appendChild(selectedfilter);//esse novo parágrafo será criado dentro da div
-        createDiv.appendChild(createButton);
-        //filter.appendChild(selectedfilter); 
+        createDiv.appendChild(createButton); //o botão com a imagem de fechar será criado dentro da div
+
         createClearAllFilterContent();
         
     } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado
