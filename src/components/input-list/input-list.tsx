@@ -127,24 +127,23 @@ function captureElementsLevel() {
 
 function captureElementsLanguage() {
     //capturo todos os elementos com a classe languages e faço um índice deles no for.
-    //ao elemento ser clicado, retornará 'ok' no console.
+    //ao elemento ser clicado, executará a função createFilter, informando dois parâmetros para a função.
     language = document.querySelectorAll('.languages');
     for (let i = 0; i < language.length; i++) {
         language[i].addEventListener('click', () => {
-
-            console.log('okLanguage');
+            createFilter(language, i);
         })
     }
 }
 
 function captureElementsTools() {
     //capturo todos os elementos com a classe tools e faço um índice deles no for.
-    //ao elemento ser clicado, retornará 'okTools' no console.
+    //ao elemento ser clicado, executará a função createFilter, informando dois parâmetros para a função.
     tools = document.querySelectorAll('.tools');
     for (let i = 0; i < tools.length; i++) {
         tools[i].addEventListener('click', () => {
             createFilter(tools, i);
-            console.log('okTools');
+
         })
     }
 }
