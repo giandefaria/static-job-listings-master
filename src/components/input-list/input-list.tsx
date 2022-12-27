@@ -105,7 +105,6 @@ function captureElementsStack() {
     //ao elemento ser clicado, retornará 'okStack' no console.
     stack = document.querySelectorAll('.stack');
     for (let i = 0; i < stack.length; i++) {
-        console.log(stack[i]);
         stack[i].addEventListener('click', () => {
 
             console.log('okStack');
@@ -118,7 +117,6 @@ function captureElementsLevel() {
     //ao elemento ser clicado, retornará 'okStack' no console.
     level = document.querySelectorAll('.level');
     for (let i = 0; i < level.length; i++) {
-        console.log(level[i]);
         level[i].addEventListener('click', () => {
 
             console.log('oklevel');
@@ -131,7 +129,6 @@ function captureElementsLanguage() {
     //ao elemento ser clicado, retornará 'ok' no console.
     language = document.querySelectorAll('.languages');
     for (let i = 0; i < language.length; i++) {
-        console.log(language[i]);
         language[i].addEventListener('click', () => {
 
             console.log('okLanguage');
@@ -144,7 +141,6 @@ function captureElementsTools() {
     //ao elemento ser clicado, retornará 'okTools' no console.
     tools = document.querySelectorAll('.tools');
     for (let i = 0; i < tools.length; i++) {
-        console.log(tools[i]);
         tools[i].addEventListener('click', () => {
 
             console.log('okTools');
