@@ -95,6 +95,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
     captureElementsStack(); //após mapear os elementos, essa função será executada
     captureElementsLevel(); //após mapear os elementos, essa função será executada
     captureElementsLanguage(); //após mapear os elementos, essa função será executada
+    captureElementsTools(); //após mapear os elementos, essa função será executada
 
 }//final da arrow function da const AddJobList
 
@@ -133,7 +134,7 @@ function captureElementsLanguage() {
         console.log(language[i]);
         language[i].addEventListener('click', () => {
 
-            console.log('ok');
+            console.log('okLanguage');
         })
     }
 }
