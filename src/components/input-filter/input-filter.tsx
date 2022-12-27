@@ -1,10 +1,9 @@
 import { filter } from '../main/main'
 
-//função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do array daquela tag.
+//função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do array daquela tag, informações necessárias para especificar qual a tag clicada.
 export function createFilter(tags: any, i : number) {
     
-    let tagOnList = false //variável se a tag clicada já existe na lista ou não
-
+    let tagOnList = false //variável se a tag selecionada já existe na lista ou não
     const filterChildrens = filter.children as HTMLCollectionOf<Element> //seleciono os parágrafos filhos da section filter, onde estarão os elementos das tags
 
     for (let index = 0; index < filterChildrens.length; index++) {
@@ -18,7 +17,5 @@ export function createFilter(tags: any, i : number) {
         filter.appendChild(selectedfilter); //esse novo parágrafo será criado dentro do elemento de classe filter
         
     } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado
-
-    console.log(tagOnList);
 
 }
