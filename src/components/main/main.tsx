@@ -25,10 +25,10 @@ export default function Principal() {
 
             </header>
             <main>
-                <section>
+                <section className='filters-content'>
                     <div className='filters'></div>
 
-                    <div className='clear-all'></div>
+                    <p className='clear-all'></p>
 
                 </section>
 

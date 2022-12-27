@@ -13,6 +13,7 @@ export function createFilter(tags: any, i : number) {
     if (tagOnList == false) {
         const selectedfilter = document.createElement('p'); //uma const para criar um novo parágrafo
         selectedfilter.textContent = tags[i].innerHTML;  // o que conterá dentro desse novo parágrafo
+        selectedfilter.className = 'selected-filter';
         console.log(tags[i].innerHTML);
         filter.appendChild(selectedfilter); //esse novo parágrafo será criado dentro do elemento de classe filter
         createClearAllFilterContent();
