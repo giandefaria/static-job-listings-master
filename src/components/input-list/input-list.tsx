@@ -103,12 +103,11 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
 
 function captureElementsStack() {
     //capturo todos os elementos com a classe stack e faço um índice deles no for.
-    //ao elemento ser clicado, retornará 'okStack' no console.
+    //ao elemento ser clicado, executará a função createFilter, informando dois parâmetros para a função.
     stack = document.querySelectorAll('.stack');
     for (let i = 0; i < stack.length; i++) {
         stack[i].addEventListener('click', () => {
-
-            console.log('okStack');
+            createFilter(stack, i);
         })
     }
 }
