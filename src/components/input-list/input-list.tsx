@@ -6,6 +6,7 @@ import { useEffect } from "react";
 let stack: NodeListOf<Element>;
 let level: NodeListOf<Element>;
 let language: NodeListOf<Element>;
+let tools: NodeListOf<Element>;
 
 
 //no arquivo main.tsx foi indicado o objeto em json constante em data.tsx e o elemento do html com classe 'list'
@@ -50,7 +51,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
 
         //adicionando o nível da vaga (junior, pleno, senior)
         const creatPLevel = document.createElement('p')
-        creatPLevel.className = 'level'
+        creatPLevel.className = 'level';
         creatPLevel.textContent = itemArray.level;
         creatSection.appendChild(creatPLevel);
 
@@ -67,6 +68,7 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
         //agora um for para adicionar as ferramentas exigidas pela vaga, constantes no campo "tools" do array
         for (let i = 0; i < itemArray.tools.length; i++) {
             const creatPTools = document.createElement('p');
+            creatPTools.className = 'tools';
             creatPTools.textContent = itemArray.tools[i]; //é criado um <p> com o ítem do indice do loop          
             creatSection.appendChild(creatPTools);
         }
@@ -132,6 +134,19 @@ function captureElementsLanguage() {
         language[i].addEventListener('click', () => {
 
             console.log('ok');
+        })
+    }
+}
+
+function captureElementsTools() {
+    //capturo todos os elementos com a classe tools e faço um índice deles no for.
+    //ao elemento ser clicado, retornará 'okTools' no console.
+    tools = document.querySelectorAll('.tools');
+    for (let i = 0; i < tools.length; i++) {
+        console.log(tools[i]);
+        tools[i].addEventListener('click', () => {
+
+            console.log('okTools');
         })
     }
 }
