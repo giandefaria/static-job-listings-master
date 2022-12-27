@@ -13,6 +13,7 @@ export function createFilter(tags: any, i : number) {
     
     if (tagOnList == false) {
         const createDiv = document.createElement('div')
+        createDiv.className = 'tag-and-button'
         const createButton = document.createElement('button'); //crio o botão com o ícone de excluir a div
         createButton.className = 'close-button';
         const selectedfilter = document.createElement('p'); //uma const para criar um novo parágrafo

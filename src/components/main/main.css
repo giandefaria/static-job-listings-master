@@ -41,6 +41,10 @@ main  {
     gap: 10px;
 }
 
+.tag-and-button {
+    display: flex;
+}
+
 .selected-filter {
     font-weight: 700;
     color: hsl(180, 29%, 50%);
