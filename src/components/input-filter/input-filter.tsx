@@ -17,7 +17,7 @@ export function createFilter(tags: any, i : number) {
         console.log(tags[i].innerHTML);
         filter.appendChild(selectedfilter); //esse novo parágrafo será criado dentro do elemento de classe filter
         
-    }
+    } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado
 
     console.log(tagOnList);
 
