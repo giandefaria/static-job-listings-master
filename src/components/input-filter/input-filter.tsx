@@ -36,3 +36,10 @@ function createClearAllFilterContent() {
     filterContent.classList.add('filters-content-active') //ativo a classe do filtercontent;
 
 };
+
+//remove os filtros e o campo clear
+export function clearAll() {
+    filter.innerHTML = ""
+    clearAllFilter.innerHTML = ""
+    filterContent.classList.remove('filters-content-active');
+}

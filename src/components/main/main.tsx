@@ -2,6 +2,7 @@ import './main.css';
 import { useEffect, useLayoutEffect } from 'react';
 import { jobList } from '../json-file/data';
 import { AddJobList } from '../input-list/input-list';
+import { clearAll } from '../input-filter/input-filter';
 
 export let filterContent: HTMLElement;
 export let filter: HTMLElement;
@@ -30,7 +31,7 @@ export default function Principal() {
                 <section className='filters-content'>
                     <div className='filters'></div>
 
-                    <p className='clear-all'></p>
+                    <p className='clear-all' onClick={clearAll}></p>
 
                 </section>
 
