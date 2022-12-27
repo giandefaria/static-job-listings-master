@@ -115,12 +115,11 @@ function captureElementsStack() {
 
 function captureElementsLevel() {
     //capturo todos os elementos com a classe stack e faço um índice deles no for.
-    //ao elemento ser clicado, retornará 'okStack' no console.
+    //ao elemento ser clicado, executará a função createFilter, informando dois parâmetros para a função.
     level = document.querySelectorAll('.level');
     for (let i = 0; i < level.length; i++) {
         level[i].addEventListener('click', () => {
-
-            console.log('oklevel');
+            createFilter(level, i);
         })
     }
 }
