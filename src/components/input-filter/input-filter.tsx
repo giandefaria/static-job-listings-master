@@ -8,7 +8,7 @@ export function createFilter(tags: any, i : number) {
     const filterChildrens = filter.children as HTMLCollectionOf<Element> //seleciono os parágrafos filhos da div filter, onde estarão os elementos das tags
 
     for (let index = 0; index < filterChildrens.length; index++) {
-       if (filterChildrens[index].innerHTML == tags[i].innerHTML) {tagOnList = true} // se o conteúdo de alguma das classes filhas for igual a tag clicada, o tagOnList será true;
+       if (filterChildrens[index].children[0].innerHTML == tags[i].innerHTML) {tagOnList = true} // se o conteúdo de alguma das classes filhas for igual a tag clicada, o tagOnList será true;
     }
     
     if (tagOnList == false) {
