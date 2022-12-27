@@ -13,13 +13,13 @@ export function createFilter(tags: any, i : number) {
     
     if (tagOnList == false) {
         const createDiv = document.createElement('div') //cria uma div
-        createDiv.className = 'tag-and-button'
+            createDiv.className = 'tag-and-button'
         const createButton = document.createElement('button'); //crio o botão com o ícone de excluir a div
-        createButton.className = 'close-button';
+            createButton.className = 'close-button';
         const selectedfilter = document.createElement('p'); //uma const para criar um novo parágrafo
-        selectedfilter.textContent = tags[i].innerHTML;  // o que conterá dentro desse novo parágrafo
-        selectedfilter.className = 'selected-filter';
-        console.log(tags[i].innerHTML);
+            selectedfilter.textContent = tags[i].innerHTML;  // o que conterá dentro desse novo parágrafo
+            selectedfilter.className = 'selected-filter';
+
         filter.appendChild(createDiv); //esse nova div será criada dentro do elemento de classe filter
         createDiv.appendChild(selectedfilter);//esse novo parágrafo será criado dentro da div
         createDiv.appendChild(createButton); //o botão com a imagem de fechar será criado dentro da div
