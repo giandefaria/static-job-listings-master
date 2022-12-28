@@ -44,4 +44,14 @@ export function clearAll() {
     filterContent.classList.remove('filters-content-active');
 }
 
-//adicionar função que remove individualmente o filtro ao clicar no button com o X.
+function removeFilter() {
+
+    let filter = document.querySelectorAll('.close-button');
+    for (let index = 0; index < filter.length; index++) {
+        filter[index].addEventListener('click', () => {
+            filter[index].parentElement?.remove();
+        })
+        
+    }
+
+}
