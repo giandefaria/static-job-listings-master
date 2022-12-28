@@ -9,6 +9,7 @@
 - [X] importar o título da vaga do json
 - [X] importar os dados da data, tempo de serviço e localização
 - [x] ao clicar em alguma tag, adiciona ela no campo de tags
+- [] adicionar função que remove individualmente o filtro ao clicar no button com o X.
 - [] crio uma constante para filtragem, que terá o parametro da informação que quero que seja filtrada
 - [] será indicada a função de addicionar na lista, mas no primeiro parmaetro não será o array, e sim o nome da constante do filtro.
 - [X] fazer a página criar essa lista automaticamente 

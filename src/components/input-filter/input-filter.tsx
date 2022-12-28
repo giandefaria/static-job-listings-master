@@ -43,3 +43,5 @@ export function clearAll() {
     clearAllFilter.innerHTML = ""
     filterContent.classList.remove('filters-content-active');
 }
+
+//adicionar função que remove individualmente o filtro ao clicar no button com o X.
