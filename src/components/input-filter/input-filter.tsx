@@ -25,6 +25,7 @@ export function createFilter(tags: any, i : number) {
         createDiv.appendChild(createButton); //o botão com a imagem de fechar será criado dentro da div
 
         createClearAllFilterContent();
+        removeFilterOnClick();
         
     } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado
 
@@ -44,7 +45,7 @@ export function clearAll() {
     filterContent.classList.remove('filters-content-active');
 }
 
-function removeFilter() {
+function removeFilterOnClick() {
 
     let filter = document.querySelectorAll('.close-button');
     for (let index = 0; index < filter.length; index++) {
