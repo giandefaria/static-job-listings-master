@@ -24,14 +24,14 @@ export function createFilter(tags: any, i : number) {
         createDiv.appendChild(selectedfilter);//esse novo parágrafo será criado dentro da div
         createDiv.appendChild(createButton); //o botão com a imagem de fechar será criado dentro da div
 
-        createClearAllFilterContent();
-        removeFilterOnClick();
+        createClearAllFilterContent(); //cria o elemento 'clear' no html
+        removeFilterOnClick(); //executarei a função para atualizar o array de filtros
         
     } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado
 
-}
+} //fim da função createFilter
 
-
+//cria o elemento 'clear' no  html
 function createClearAllFilterContent() {
     clearAllFilter.innerHTML = 'Clear'
     filterContent.classList.add('filters-content-active') //ativo a classe do filtercontent;
@@ -42,17 +42,17 @@ function createClearAllFilterContent() {
 export function clearAll() {
     filter.innerHTML = ""
     clearAllFilter.innerHTML = ""
-    filterContent.classList.remove('filters-content-active');
+    filterContent.classList.remove('filters-content-active'); //removo a classe active
 }
 
+//função que montará um array com os filtros adicionados, e ao ser clicado, excluirá a div classe tag-and-button
 function removeFilterOnClick() {
 
-    let filter = document.querySelectorAll('.close-button');
+    let filter = document.querySelectorAll('.close-button'); //cria a variável que selecionará todos os elementos com a classe 'close-button'
     for (let index = 0; index < filter.length; index++) {
         filter[index].addEventListener('click', () => {
-            filter[index].parentElement?.remove();
+            filter[index].parentElement?.remove(); //o filtro ao ser clicado será excluída a div principal
         })
         
     }
-
 }
