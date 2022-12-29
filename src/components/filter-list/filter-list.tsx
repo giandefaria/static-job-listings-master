@@ -1,5 +1,7 @@
+import { jobList } from '../json-file/data'
 
-export const ResultFilter = 
+
+export const ResultFilter =
 
 function filterlist() {
 
