@@ -8,7 +8,6 @@ export const ResultFilter = jobList.filter(filterlist)
 console.log(ResultFilter);
 
 export function filterlist(array: any) {
-    
     return array.languages == "JavaScript"  
 
 };
