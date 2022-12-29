@@ -3,6 +3,7 @@ import { useEffect, useLayoutEffect } from 'react';
 import { jobList } from '../json-file/data';
 import { AddJobList } from '../input-list/input-list';
 import { clearAll } from '../input-filter/input-filter';
+import '../filter-list/filter-list'
 
 export let filterContent: HTMLElement;
 export let filter: HTMLElement;
