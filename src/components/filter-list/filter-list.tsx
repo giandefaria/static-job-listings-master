@@ -1,9 +1,9 @@
 import { jobList } from '../json-file/data'
 
 
-export const ResultFilter =
+export const ResultFilter = jobList.filter(filterlist)
 
-function filterlist() {
+export function filterlist(array: any) {
+    return array.languages == "JavaScript"  
 
-
-}
+};
