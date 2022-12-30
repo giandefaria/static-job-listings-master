@@ -7,11 +7,12 @@ let linguagem;
 export const ResultFilter = jobList.filter(filterlist)
 
 console.log(ResultFilter);
-
+console.log(filterlist);
 
 export function filterlist(array: any) {
     console.log(array);
-    return array.languages == "JavaScript" ;
+    //return array.languages == "JavaScript" ;
+    return array.languages.includes('JavaScript');
     
 
 };
