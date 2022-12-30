@@ -12,8 +12,8 @@ console.log(filterlist);
 export function filterlist(array: any) {
     console.log(array);
     //return array.languages == "JavaScript" ;
-    const teste = array.languages.includes('JavaScript'); 
-    return teste;
+    const searchValueInArray = array.languages.includes('JavaScript'); 
+    return searchValueInArray;
     
 
 };
