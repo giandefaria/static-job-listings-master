@@ -13,7 +13,7 @@ export default function Principal() {
 
     //useEfect utilizado para chamar a variável list somente após a rendereização. Antes disso ela acaba retornando null
     useEffect(() => {
-        console.log('fire')
+        //console.log('fire')
         const list = document.querySelector('.list') as HTMLElement;
         filterContent = document.querySelector('.filters-content') as HTMLElement;
         filter = document.querySelector('.filters') as HTMLElement
