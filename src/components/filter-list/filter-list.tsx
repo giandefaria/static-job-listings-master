@@ -6,20 +6,51 @@ import { jobList } from '../json-file/data'
 
 let linguagem = ['JavaScript', 'Python'];
 //let filtros = 'array.languages.includes(linguagem[0]) && array.languages.includes(linguagem[1]);'
-
-function tentativa() {
-    let tentativaFiltroVariavel;
+let tentativaFiltroVariavel: any;
+function tentativa(array: any) {
+    tentativaFiltroVariavel = 'array.languages';
     for (let index = 0; index < linguagem.length; index++) {
-        tentativaFiltroVariavel = tentativaFiltroVariavel + `&& array.languages.includes(linguagem[${index}])`
+        
+        tentativaFiltroVariavel = tentativaFiltroVariavel + ` && array.languages.includes(linguagem[${index}])`
         
     }
     console.log (tentativaFiltroVariavel);
+    return tentativaFiltroVariavel;
 
+}
+//tentativa()
+//console.log(tentativa());
+console.log(tentativaFiltroVariavel)
+
+function tentativaFiltro () {
+    const arrayFiltrado = jobList.filter((array) => {
+        
+        let novaTentativaFiltro: any = array.languages; 
+        for (let index = 0; index < linguagem.length; index++) {
+        
+            novaTentativaFiltro = novaTentativaFiltro + ` &&${ array.languages.includes(linguagem[index])}`
+            
+        }
+        console.log (novaTentativaFiltro);
+        //criar um if e colocar condição de retornar um bolean true ou false
+        //return tentativaFiltroVariavel;
+
+        //let variavelArray = 
+        
+        
+        
+        //tentativa(array);
+
+        //console.log(variavelArray);
+        return novaTentativaFiltro;
+    })
+    console.log(arrayFiltrado)
 }
 
 
+
 //export const ResultFilter = jobList.filter(filterlist)
-export const ResultFilter = jobList.filter(filterlist)
+/* export const ResultFilter = jobList.filter(filterlist)
 console.log(jobList.filter((filtro: any) => {
     let filtros = filtro.languages;
 
@@ -31,8 +62,9 @@ console.log(jobList.filter((filtro: any) => {
     console.log(filtros);
     return filtros;
         
-}));
+})); */
 
+/*
 function filtros(array: any) {
     let variavel = array.languages
     for (let index = 0; index < linguagem.length; index++) {
@@ -47,31 +79,11 @@ function filtros(array: any) {
     console.log(variavel);
     return variavel;
 }
+*/
 
-
+/*
 console.log(ResultFilter);
 console.log(filterlist);
-
-export function filterlist(array: any) {
-    //console.log(array);
-    //return array.languages == "JavaScript" ;
-    const searchValueInArray = filtros(array);
-    
-        /*
-        array.languages &&
-        array.languages.includes(linguagem[0]) && 
-        array.languages.includes(linguagem[1]);*/ 
-    //const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
-    console.log(searchValueInArray);
-    return searchValueInArray;
-    
-
-};
-
-
-/* ===========Original
-export const ResultFilter = jobList.filter(filterlist)
-console.log(jobList.filter(filterlist);
 
 export function filterlist(array: any) {
     //console.log(array);
@@ -82,9 +94,30 @@ export function filterlist(array: any) {
         array.languages &&
         array.languages.includes(linguagem[0]) && 
         array.languages.includes(linguagem[1]);
-    const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
+    //const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
     console.log(searchValueInArray);
     return searchValueInArray;
     
 
-}; */
+};
+*/
+
+// ===========Original
+export const ResultFilter = jobList.filter(filterlist)
+console.log(ResultFilter);
+
+export function filterlist(array: any) {
+    //console.log(array);
+    //return array.languages == "JavaScript" ;
+    const searchValueInArray = 
+    
+        
+        array.languages &&
+        array.languages.includes(linguagem[0]) && 
+        array.languages.includes(linguagem[1]);
+    //const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
+    console.log(searchValueInArray);
+    return searchValueInArray;
+    
+
+}; 
