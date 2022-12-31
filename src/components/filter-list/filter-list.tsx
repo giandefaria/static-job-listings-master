@@ -5,6 +5,7 @@ import { AddJobList } from '../input-list/input-list';
 import { jobList } from '../json-file/data'
 
 let linguagem = ['JavaScript', 'Python'];
+//let filtros = 'array.languages.includes(linguagem[0]) && array.languages.includes(linguagem[1]);'
 
 //export const ResultFilter = jobList.filter(filterlist)
 export const ResultFilter = jobList.filter(filterlist)
@@ -21,6 +22,21 @@ console.log(jobList.filter((filtro: any) => {
         
 }));
 
+function filtros(array: any) {
+    let variavel = array.languages
+    for (let index = 0; index < linguagem.length; index++) {
+        if (array.languages.includes(linguagem[index]) == true) {
+            variavel = variavel + ` && ${array.languages.includes(linguagem[index])}`
+            console.log(linguagem[index])
+            
+        }
+        
+        
+    }
+    console.log(variavel);
+    return variavel;
+}
+
 
 console.log(ResultFilter);
 console.log(filterlist);
@@ -28,12 +44,12 @@ console.log(filterlist);
 export function filterlist(array: any) {
     //console.log(array);
     //return array.languages == "JavaScript" ;
-    const searchValueInArray = 
+    const searchValueInArray = filtros(array);
     
-        
+        /*
         array.languages &&
         array.languages.includes(linguagem[0]) && 
-        array.languages.includes(linguagem[1]); 
+        array.languages.includes(linguagem[1]);*/ 
     //const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
     console.log(searchValueInArray);
     return searchValueInArray;
