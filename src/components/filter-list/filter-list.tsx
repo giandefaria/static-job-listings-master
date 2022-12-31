@@ -7,6 +7,17 @@ import { jobList } from '../json-file/data'
 let linguagem = ['JavaScript', 'Python'];
 //let filtros = 'array.languages.includes(linguagem[0]) && array.languages.includes(linguagem[1]);'
 
+function tentativa() {
+    let tentativaFiltroVariavel;
+    for (let index = 0; index < linguagem.length; index++) {
+        tentativaFiltroVariavel = tentativaFiltroVariavel + `&& array.languages.includes(linguagem[${index}])`
+        
+    }
+    console.log (tentativaFiltroVariavel);
+
+}
+
+
 //export const ResultFilter = jobList.filter(filterlist)
 export const ResultFilter = jobList.filter(filterlist)
 console.log(jobList.filter((filtro: any) => {
@@ -57,3 +68,23 @@ export function filterlist(array: any) {
 
 };
 
+
+/* ===========Original
+export const ResultFilter = jobList.filter(filterlist)
+console.log(jobList.filter(filterlist);
+
+export function filterlist(array: any) {
+    //console.log(array);
+    //return array.languages == "JavaScript" ;
+    const searchValueInArray = filtros(array);
+    
+        
+        array.languages &&
+        array.languages.includes(linguagem[0]) && 
+        array.languages.includes(linguagem[1]);
+    const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
+    console.log(searchValueInArray);
+    return searchValueInArray;
+    
+
+}; */
