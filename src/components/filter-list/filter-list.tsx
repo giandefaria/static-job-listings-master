@@ -21,6 +21,7 @@ function tentativa(array: any) {
 //tentativa()
 //console.log(tentativa());
 console.log(tentativaFiltroVariavel)
+let testeString = 'array.languages.includes(linguagem[index])'
 
 function tentativaFiltro () {
     const arrayFiltrado = jobList.filter((array) => {
@@ -29,6 +30,15 @@ function tentativaFiltro () {
         for (let index = 0; index < linguagem.length; index++) {
         
             novaTentativaFiltro = novaTentativaFiltro + ` &&${ array.languages.includes(linguagem[index])}`
+            
+
+            return array.languages.includes(linguagem[index])
+
+            if (novaTentativaFiltro == true) {
+                console.log ( 'true' )
+            } else {
+                console.log ( 'false' )
+            }
             
         }
         console.log (novaTentativaFiltro);
