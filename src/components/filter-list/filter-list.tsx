@@ -46,7 +46,7 @@ function tentativaFiltro () {
     })
     console.log(arrayFiltrado)
 }
-
+tentativaFiltro();
 
 
 //export const ResultFilter = jobList.filter(filterlist)
