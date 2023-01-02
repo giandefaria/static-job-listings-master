@@ -117,6 +117,10 @@ main  {
     color: hsl(180, 29%, 50%);
 }
 
+span {
+    display: inline-block;
+}
+
 .new {
     background: hsl(180, 29%, 50%);
     color: white;
