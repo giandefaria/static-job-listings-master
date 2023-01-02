@@ -161,6 +161,7 @@ main  {
     }
 
     .list {
+        padding-top: 60px;
         gap: 45px;
     }
 
