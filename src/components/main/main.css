@@ -162,6 +162,10 @@ main  {
     .job-information {
         flex-direction: column;
         align-items: flex-start;
+        padding-bottom: 20px;
+        border-bottom: solid;
+        border-color: black;
+        border-width: 1px;
     }
 
     .tags {
