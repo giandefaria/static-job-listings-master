@@ -164,7 +164,9 @@ main  {
         align-items: flex-start;
     }
 
-    
+    .tags {
+        flex-wrap: wrap;
+    }
 
 
 
