@@ -151,3 +151,21 @@ main  {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+
+    .list-item {   
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-information {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+
+
+
+}
