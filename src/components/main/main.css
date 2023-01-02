@@ -154,6 +154,12 @@ main  {
 
 @media screen and (max-width: 500px) {
 
+    header {
+        background: url(../../assets/bg-header-mobile.svg) no-repeat;
+        background-size: cover;
+        background-color: hsl(180, 29%, 50%);
+    }
+
     .list-item {   
         flex-direction: column;
         align-items: flex-start;
