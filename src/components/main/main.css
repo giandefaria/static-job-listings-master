@@ -160,6 +160,7 @@ main  {
     }
 
     .job-information {
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         padding-bottom: 20px;
