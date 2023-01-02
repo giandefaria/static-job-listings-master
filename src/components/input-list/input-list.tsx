@@ -86,11 +86,13 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
 
         function verifFeatured() {
             if (itemArray.featured == true) {
+                li.className = "list-item list-item-active" //adiciono a classe da borda colorida no elemento
                 return (`<span class="featured">FEATURED</span>`)
             } else {
                 return (``)
             }
         }
+
 
     })//final do array.map
     captureElementsStack(); //após mapear os elementos, essa função será executada

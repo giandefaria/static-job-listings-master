@@ -94,7 +94,10 @@ main  {
 }
 
 .list-item-active {
-    border-left: hsl(180, 29%, 50%);
+    border-left: red;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-radius: 5px;
 }
 
 .job-information{
