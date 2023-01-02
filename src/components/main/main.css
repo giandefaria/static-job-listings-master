@@ -180,7 +180,8 @@ span {
         gap: 45px;
     }
 
-    .list-item {   
+    .list-item {
+        padding: 20px;   
         flex-direction: column;
         align-items: flex-start;
 
