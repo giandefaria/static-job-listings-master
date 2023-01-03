@@ -17,7 +17,9 @@ const Filtros = jobList.map( (job) => {
 })
 console.log(Filtros)
 
+//The multipleInArray function takes an array and a collection of values and checks if the specified values exist in the array.
 
+//If the condition is met for all values, the function returns true, otherwise, false is returned.
 //função para verificar multiplos valores dentro de um array
 function multipleInArray(arr: any, values: any) {
     return values.every((value: any) => {
