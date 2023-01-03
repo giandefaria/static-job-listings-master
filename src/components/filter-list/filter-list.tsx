@@ -5,6 +5,38 @@ import { AddJobList } from '../input-list/input-list';
 import { jobList } from '../json-file/data'
 
 let linguagem = ['JavaScript', 'Python'];
+
+const Filtros = jobList.map( (job) => {
+
+    let jobList = [job.role, job.level]
+    jobList = jobList.concat(job.languages, job.tools)
+
+    return jobList
+
+
+})
+console.log(Filtros)
+
+
+//função para verificar multiplos valores dentro de um array
+function multipleInArray(arr: any, values: any) {
+    return values.every((value: any) => {
+      return arr.includes(value);
+    });
+}
+
+let arrayLinguagem = ['JavaScript', 'Python']
+function array() {   
+    for (let index = 0; index < Filtros.length; index++) {
+        
+        console.log(multipleInArray(Filtros[index], arrayLinguagem)); //verifico se cada array constante em um índice de filtros batte com o valor de arrayLinguagem
+        
+    }
+} 
+array();   
+    
+
+
 //let filtros = 'array.languages.includes(linguagem[0]) && array.languages.includes(linguagem[1]);'
 let tentativaFiltroVariavel: any;
 function tentativa(array: any) {
