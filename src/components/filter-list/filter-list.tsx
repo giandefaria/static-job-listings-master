@@ -36,11 +36,23 @@ function array() {
         
     }
 } 
-array();   
+array();  
+
+//concatenar tools, language, role, e level em um array
+
+function concatenar() {
+    jobList.map( (array) => {
+        console.log(array)
+        let arrayConcat = [array.role, array.level];
+        arrayConcat = arrayConcat.concat(array.languages, array.tools)
+        console.log(arrayConcat);
+    })
+}
+concatenar();
 
 //fará um filtro do jobList, retornando o bloco em que o language contenha os valores dentro de arrayLinguagem
 const ResultFilterJob = jobList.filter( (filtro) => {
-
+    
     return arrayLinguagem.every((value: any) => {
         return filtro.languages.includes(value);
     });
