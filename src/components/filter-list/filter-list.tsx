@@ -10,7 +10,7 @@ const Filtros = jobList.map( (job) => {
 
     let jobList = [job.role, job.level]
     jobList = jobList.concat(job.languages, job.tools)
-
+    //console.log(jobList)
     return jobList
 
 
@@ -21,6 +21,7 @@ console.log(Filtros)
 
 //If the condition is met for all values, the function returns true, otherwise, false is returned.
 //função para verificar multiplos valores dentro de um array
+//https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
 function multipleInArray(arr: any, values: any) {
     return values.every((value: any) => {
       return arr.includes(value);
@@ -36,6 +37,15 @@ function array() {
     }
 } 
 array();   
+
+const filtrarJob = jobList.filter( (filtro) => {
+
+        return arrayLinguagem.every((value: any) => {
+        return filtro.languages.includes(value);
+      });
+} )
+
+console.log(filtrarJob)
     
 
 
