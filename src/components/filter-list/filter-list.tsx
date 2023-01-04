@@ -39,14 +39,14 @@ function array() {
 array();   
 
 //fará um filtro do jobList, retornando o bloco em que o language contenha os valores dentro de arrayLinguagem
-const filtrarJob = jobList.filter( (filtro) => {
+const ResultFilterJob = jobList.filter( (filtro) => {
 
     return arrayLinguagem.every((value: any) => {
         return filtro.languages.includes(value);
     });
 } )
 
-console.log(filtrarJob)
+console.log(ResultFilterJob);
     
 
 
