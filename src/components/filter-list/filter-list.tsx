@@ -46,8 +46,8 @@ function concatenar() {
         let arrayConcat = [array.role, array.level];
         arrayConcat = arrayConcat.concat(array.languages, array.tools) //como languages e tools é um array, faço eles serem concatenados em um só array
         console.log(arrayConcat);
-        Object.assign(array, {filters: arrayConcat}); //object.assign pode atribuir multiplas propriedades em um objeto. Adiciono a key filters com os valores concatenados no array
-        console.log(array);
+        let filterInArray = Object.assign(array, {filters: arrayConcat}); //object.assign pode atribuir multiplas propriedades em um objeto. Adiciono a key filters com os valores concatenados no array do jobList
+        console.log(filterInArray);
                 
     })
 }
