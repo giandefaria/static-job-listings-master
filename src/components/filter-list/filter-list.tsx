@@ -4,7 +4,7 @@ import { KeyObject } from 'tls';
 import { AddJobList } from '../input-list/input-list';
 import { jobList } from '../json-file/data'
 
-let linguagem = ['JavaScript', 'Python'];
+let arrFilters = ['JavaScript', 'Python'];
 
 const Filtros = jobList.map( (job) => {
 
@@ -17,29 +17,11 @@ const Filtros = jobList.map( (job) => {
 })
 console.log(Filtros)
 
-//The multipleInArray function takes an array and a collection of values and checks if the specified values exist in the array.
 
-//If the condition is met for all values, the function returns true, otherwise, false is returned.
-//função para verificar multiplos valores dentro de um array
-//https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
-function multipleInArray(arr: any, values: any) {
-    return values.every((value: any) => {
-      return arr.includes(value);
-    });
-}
-
-let arrayLinguagem = ['JavaScript', 'Python']
-function array() {   
-    for (let index = 0; index < Filtros.length; index++) {
-        
-        console.log(multipleInArray(Filtros[index], arrayLinguagem)); //verifico se cada array constante em um índice de filtros batte com o valor de arrayLinguagem
-        
-    }
-} 
-array();  
+  
 
 //concatenar tools, language, role, e level em um array que será atribuída a key chamada filters
-function concatenar() {
+const ConcatFiltersJobList =
     //faço um map em cada bloco do array {}
     jobList.map( (array: any) => {
         //arrayConcat terá um array com os valores constantes em role, level, array e languages
@@ -48,16 +30,43 @@ function concatenar() {
         console.log(arrayConcat);
         let filterInArray = Object.assign(array, {filters: arrayConcat}); //object.assign pode atribuir multiplas propriedades em um objeto. Adiciono a key filters com os valores concatenados no array do jobList
         console.log(filterInArray);
+        return filterInArray
                 
     })
+
+console.log (ConcatFiltersJobList)
+
+//The multipleInArray function takes an array and a collection of values and checks if the specified values exist in the array.
+
+//If the condition is met for all values, the function returns true, otherwise, false is returned.
+//função para verificar multiplos valores dentro de um array
+//https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
+function multipleInArray(arr: any, values: any) {
+    return values.every((value: any) => {
+      return arr.filters.includes(value);
+    });
 }
-concatenar();
+
+let arrayLinguagem = ['JavaScript', 'Python']
+function array() {   
+    for (let index = 0; index < ConcatFiltersJobList.length; index++) {
+        
+        console.log(multipleInArray(ConcatFiltersJobList[index], arrayLinguagem)); //verifico se cada array constante em um índice de filtros batte com o valor de arrayLinguagem
+        
+    }
+} 
+array();
+
+
+
+//AGORA TENHO QUE FAZER O FILTRAR ESSE ARRAY E RETORNAR SÓ OS BLOCOS QUE FECHAM COM O INCLUDES
 
 //fará um filtro do jobList, retornando o bloco em que o language contenha os valores dentro de arrayLinguagem
-const ResultFilterJob = jobList.filter( (filtro) => {
+const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
     
-    return arrayLinguagem.every((value: any) => {
-        return filtro.languages.includes(value);
+    
+    return arrFilters.every((value: any) => {
+        return obj.filters.includes(value);
     });
 } )
 
@@ -69,7 +78,7 @@ console.log(ResultFilterJob);
 let tentativaFiltroVariavel: any;
 function tentativa(array: any) {
     tentativaFiltroVariavel = 'array.languages';
-    for (let index = 0; index < linguagem.length; index++) {
+    for (let index = 0; index < arrFilters.length; index++) {
         
         tentativaFiltroVariavel = tentativaFiltroVariavel + ` && array.languages.includes(linguagem[${index}])`
         
@@ -87,12 +96,12 @@ function tentativaFiltro () {
     const arrayFiltrado = jobList.filter((array) => {
         
         let novaTentativaFiltro: any = array.languages; 
-        for (let index = 0; index < linguagem.length; index++) {
+        for (let index = 0; index < arrFilters.length; index++) {
         
-            novaTentativaFiltro = novaTentativaFiltro + ` &&${ array.languages.includes(linguagem[index])}`
+            novaTentativaFiltro = novaTentativaFiltro + ` &&${ array.languages.includes(arrFilters[index])}`
             
 
-            return array.languages.includes(linguagem[index])
+            return array.languages.includes(arrFilters[index])
 
             if (novaTentativaFiltro == true) {
                 console.log ( 'true' )
@@ -183,8 +192,8 @@ export function filterlist(array: any) {
     
         
         array.languages &&
-        array.languages.includes(linguagem[0]) && 
-        array.languages.includes(linguagem[1]);
+        array.languages.includes(arrFilters[0]) && 
+        array.languages.includes(arrFilters[1]);
     //const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
     console.log(searchValueInArray);
     return searchValueInArray;
