@@ -6,19 +6,6 @@ import { jobList } from '../json-file/data'
 
 let arrFilters = ['JavaScript', 'Python'];
 
-const Filtros = jobList.map( (job) => {
-
-    let jobList = [job.role, job.level]
-    jobList = jobList.concat(job.languages, job.tools)
-    //console.log(jobList)
-    return jobList
-
-
-})
-console.log(Filtros)
-
-
-  
 
 //concatenar tools, language, role, e level em um array que será atribuída a key chamada filters
 const ConcatFiltersJobList =
@@ -30,22 +17,11 @@ const ConcatFiltersJobList =
         console.log(arrayConcat);
         let filterInArray = Object.assign(array, {filters: arrayConcat}); //object.assign pode atribuir multiplas propriedades em um objeto. Adiciono a key filters com os valores concatenados no array do jobList
         console.log(filterInArray);
-        return filterInArray
+        return filterInArray //retorno o array com a key adicionada
                 
     })
 
 console.log (ConcatFiltersJobList)
-
-//The multipleInArray function takes an array and a collection of values and checks if the specified values exist in the array.
-
-//If the condition is met for all values, the function returns true, otherwise, false is returned.
-//função para verificar multiplos valores dentro de um array
-//https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
-function multipleInArray(arr: any, values: any) {
-    return values.every((value: any) => {
-      return arr.filters.includes(value);
-    });
-}
 
 let arrayLinguagem = ['JavaScript', 'Python']
 function array() {   
@@ -71,6 +47,17 @@ const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
 } )
 
 console.log(ResultFilterJob);
+
+//The multipleInArray function takes an array and a collection of values and checks if the specified values exist in the array.
+
+//If the condition is met for all values, the function returns true, otherwise, false is returned.
+//função para verificar multiplos valores dentro de um array
+//https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
+function multipleInArray(arr: any, values: any) {
+    return values.every((value: any) => {
+      return arr.filters.includes(value);
+    });
+}
     
 
 
