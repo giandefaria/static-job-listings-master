@@ -34,9 +34,6 @@ function array() {
 array();
 
 
-
-//AGORA TENHO QUE FAZER O FILTRAR ESSE ARRAY E RETORNAR SÓ OS BLOCOS QUE FECHAM COM O INCLUDES
-
 //fará um filtro do jobList, retornando o bloco em que o language contenha os valores dentro de arrayLinguagem
 const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
     
@@ -60,113 +57,6 @@ function multipleInArray(arr: any, values: any) {
 }
     
 
-
-//let filtros = 'array.languages.includes(linguagem[0]) && array.languages.includes(linguagem[1]);'
-let tentativaFiltroVariavel: any;
-function tentativa(array: any) {
-    tentativaFiltroVariavel = 'array.languages';
-    for (let index = 0; index < arrFilters.length; index++) {
-        
-        tentativaFiltroVariavel = tentativaFiltroVariavel + ` && array.languages.includes(linguagem[${index}])`
-        
-    }
-    console.log (tentativaFiltroVariavel);
-    return tentativaFiltroVariavel;
-
-}
-//tentativa()
-//console.log(tentativa());
-console.log(tentativaFiltroVariavel)
-let testeString = 'array.languages.includes(linguagem[index])'
-
-function tentativaFiltro () {
-    const arrayFiltrado = jobList.filter((array) => {
-        
-        let novaTentativaFiltro: any = array.languages; 
-        for (let index = 0; index < arrFilters.length; index++) {
-        
-            novaTentativaFiltro = novaTentativaFiltro + ` &&${ array.languages.includes(arrFilters[index])}`
-            
-
-            return array.languages.includes(arrFilters[index])
-
-            if (novaTentativaFiltro == true) {
-                console.log ( 'true' )
-            } else {
-                console.log ( 'false' )
-            }
-            
-        }
-        console.log (novaTentativaFiltro);
-        //criar um if e colocar condição de retornar um bolean true ou false
-        //return tentativaFiltroVariavel;
-
-        //let variavelArray = 
-        
-        
-        
-        //tentativa(array);
-
-        //console.log(variavelArray);
-        return novaTentativaFiltro;
-    })
-    console.log(arrayFiltrado)
-}
-tentativaFiltro();
-
-
-//export const ResultFilter = jobList.filter(filterlist)
-/* export const ResultFilter = jobList.filter(filterlist)
-console.log(jobList.filter((filtro: any) => {
-    let filtros = filtro.languages;
-
-    for (let index = 0; index < linguagem.length; index++) {
-        filtros = filtros + ` && filtro.languages.includes([${index}])`
-        
-    }
-
-    console.log(filtros);
-    return filtros;
-        
-})); */
-
-/*
-function filtros(array: any) {
-    let variavel = array.languages
-    for (let index = 0; index < linguagem.length; index++) {
-        if (array.languages.includes(linguagem[index]) == true) {
-            variavel = variavel + ` && ${array.languages.includes(linguagem[index])}`
-            console.log(linguagem[index])
-            
-        }
-        
-        
-    }
-    console.log(variavel);
-    return variavel;
-}
-*/
-
-/*
-console.log(ResultFilter);
-console.log(filterlist);
-
-export function filterlist(array: any) {
-    //console.log(array);
-    //return array.languages == "JavaScript" ;
-    const searchValueInArray = filtros(array);
-    
-        
-        array.languages &&
-        array.languages.includes(linguagem[0]) && 
-        array.languages.includes(linguagem[1]);
-    //const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
-    console.log(searchValueInArray);
-    return searchValueInArray;
-    
-
-};
-*/
 
 // ===========Original
 export const ResultFilter = jobList.filter(filterlist)
