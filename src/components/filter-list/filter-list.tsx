@@ -35,7 +35,7 @@ array();
 
 
 //fará um filtro do jobList, retornando o bloco em que o language contenha os valores dentro de arrayLinguagem
-const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
+export const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
     
     
     return arrFilters.every((value: any) => {
