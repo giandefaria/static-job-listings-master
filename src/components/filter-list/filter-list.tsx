@@ -35,13 +35,14 @@ array();
 
 
 //fará um filtro do jobList com os filtros já concatenados, retornando o bloco em que a key filters contenha os valores dentro de arrayFilters
-export const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
+export function ResultFilterJob(): any { return ConcatFiltersJobList.filter( (obj) => {
     
-    //console.log(testeFilters);
+    console.log(testeFilters);
     return testeFilters.every((value: any) => {
         return obj.filters.includes(value);
     });
 } )
+}
 
 //console.log(ResultFilterJob);
 

@@ -35,7 +35,8 @@ export function createFilter(tags: any, i : number) {
         const list = document.querySelector('.list') as HTMLElement;
         list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez. A repetição dupla é causada pelo react.strictmode localizado no index.tsx
         //AddJobList(ResultFilter, list);//adiciono lista filtrada
-        AddJobList(ResultFilterJob, list);
+        AddJobList(ResultFilterJob(), list);
+        console.log(ResultFilterJob)
         
         
     } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado
