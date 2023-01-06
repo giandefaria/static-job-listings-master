@@ -2,6 +2,7 @@ import { ResultFilter, ResultFilterJob } from '../filter-list/filter-list'
 import { AddJobList } from '../input-list/input-list'
 import { clearAllFilter, filter, filterContent } from '../main/main'
 
+export let arrFilters: any = []
 
 //função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do índice daquela tag, informações necessárias para especificar qual a tag clicada.
 export function createFilter(tags: any, i : number) {
@@ -21,6 +22,9 @@ export function createFilter(tags: any, i : number) {
         const selectedfilter = document.createElement('p'); //uma const para criar um novo parágrafo
             selectedfilter.textContent = tags[i].innerHTML;  // o que conterá dentro desse novo parágrafo
             selectedfilter.className = 'selected-filter';
+        
+        arrFilters.push(tags[i].innerHTML) //adiciono o filtro selecionado dentro da variável filters
+        console.log(arrFilters);    
 
         filter.appendChild(createDiv); //esse nova div será criada dentro do elemento de classe filter
         createDiv.appendChild(selectedfilter);//esse novo parágrafo será criado dentro da div
