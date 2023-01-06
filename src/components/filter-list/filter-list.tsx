@@ -34,7 +34,7 @@ function array() {
 array();
 
 
-//fará um filtro do jobList, retornando o bloco em que o language contenha os valores dentro de arrayLinguagem
+//fará um filtro do jobList com os filtros já concatenados, retornando o bloco em que a key filters contenha os valores dentro de arrayFilters
 export const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
     
     
