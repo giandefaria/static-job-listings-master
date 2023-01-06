@@ -1,4 +1,4 @@
-import { ResultFilter, ResultFilterJob, testeFilters } from '../filter-list/filter-list'
+import { arrFilters, ResultFilterJob} from '../filter-list/filter-list'
 import { AddJobList } from '../input-list/input-list'
 import { clearAllFilter, filter, filterContent } from '../main/main'
 
@@ -23,8 +23,8 @@ export function createFilter(tags: any, i : number) {
             selectedfilter.textContent = tags[i].innerHTML;  // o que conterá dentro desse novo parágrafo
             selectedfilter.className = 'selected-filter';
         
-        testeFilters.push(tags[i].innerHTML) //adiciono o filtro selecionado dentro da variável filters
-        console.log(testeFilters);    
+        arrFilters.push(tags[i].innerHTML) //adiciono o filtro selecionado dentro da variável filters
+        console.log(arrFilters);    
 
         filter.appendChild(createDiv); //esse nova div será criada dentro do elemento de classe filter
         createDiv.appendChild(selectedfilter);//esse novo parágrafo será criado dentro da div
@@ -36,7 +36,6 @@ export function createFilter(tags: any, i : number) {
         list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez. A repetição dupla é causada pelo react.strictmode localizado no index.tsx
         //AddJobList(ResultFilter, list);//adiciono lista filtrada
         AddJobList(ResultFilterJob(), list);
-        console.log(ResultFilterJob)
         
         
     } else { alert(`Filtro ${tags[i].innerHTML} já adicionado!`) } //se for true, exibo alerta dizendo que o filtro já foi adicionado

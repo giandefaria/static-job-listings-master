@@ -4,8 +4,7 @@ import { KeyObject } from 'tls';
 import { AddJobList } from '../input-list/input-list';
 import { jobList } from '../json-file/data'
 
-let arrFilters = ['JavaScript', 'Python'];
-export let testeFilters: any = []
+export let arrFilters: any = [];
 
 //concatenar tools, language, role, e level em um array que será atribuída a key chamada filters
 const ConcatFiltersJobList =
@@ -37,8 +36,8 @@ array();
 //fará um filtro do jobList com os filtros já concatenados, retornando o bloco em que a key filters contenha os valores dentro de arrayFilters
 export function ResultFilterJob(): any { return ConcatFiltersJobList.filter( (obj) => {
     
-    console.log(testeFilters);
-    return testeFilters.every((value: any) => {
+    console.log(arrFilters);
+    return arrFilters.every((value: any) => {
         return obj.filters.includes(value);
     });
 } )
