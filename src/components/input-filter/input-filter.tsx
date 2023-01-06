@@ -1,4 +1,4 @@
-import { ResultFilter, ResultFilterJob } from '../filter-list/filter-list'
+import { ResultFilter, ResultFilterJob, testeFilters } from '../filter-list/filter-list'
 import { AddJobList } from '../input-list/input-list'
 import { clearAllFilter, filter, filterContent } from '../main/main'
 

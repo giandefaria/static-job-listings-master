@@ -5,7 +5,7 @@ import { AddJobList } from '../input-list/input-list';
 import { jobList } from '../json-file/data'
 
 let arrFilters = ['JavaScript', 'Python'];
-export let testeFilters = []
+export let testeFilters: any = []
 
 //concatenar tools, language, role, e level em um array que será atribuída a key chamada filters
 const ConcatFiltersJobList =
