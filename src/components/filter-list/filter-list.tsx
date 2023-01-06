@@ -5,7 +5,7 @@ import { AddJobList } from '../input-list/input-list';
 import { jobList } from '../json-file/data'
 
 let arrFilters = ['JavaScript', 'Python'];
-
+export let testeFilters = []
 
 //concatenar tools, language, role, e level em um array que será atribuída a key chamada filters
 const ConcatFiltersJobList =
@@ -37,13 +37,13 @@ array();
 //fará um filtro do jobList com os filtros já concatenados, retornando o bloco em que a key filters contenha os valores dentro de arrayFilters
 export const ResultFilterJob = ConcatFiltersJobList.filter( (obj) => {
     
-    
-    return arrFilters.every((value: any) => {
+    //console.log(testeFilters);
+    return testeFilters.every((value: any) => {
         return obj.filters.includes(value);
     });
 } )
 
-console.log(ResultFilterJob);
+//console.log(ResultFilterJob);
 
 //The multipleInArray function takes an array and a collection of values and checks if the specified values exist in the array.
 
