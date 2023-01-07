@@ -1,7 +1,3 @@
-import { clear } from 'console';
-import { Key, useEffect } from 'react';
-import { KeyObject } from 'tls';
-import { AddJobList } from '../input-list/input-list';
 import { jobList } from '../json-file/data'
 
 export let arrFilters: any = [];
@@ -20,7 +16,7 @@ const ConcatFiltersJobList =
                 
     })
 
-console.log (ConcatFiltersJobList)
+//console.log (ConcatFiltersJobList)
 
 
 //fará um filtro do jobList com os filtros já concatenados, retornando o bloco em que a key filters contenha os valores dentro de arrayFilters
