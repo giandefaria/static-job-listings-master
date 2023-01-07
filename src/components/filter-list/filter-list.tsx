@@ -6,17 +6,17 @@ import { jobList } from '../json-file/data'
 
 export let arrFilters: any = [];
 
-//concatenar tools, language, role, e level em um array que será atribuída a key chamada filters
+//concatenar tools, language, role, e level em um array que será atribuída na key chamada filters
 const ConcatFiltersJobList =
     //faço um map em cada bloco do array {}
     jobList.map( (array: any) => {
         //arrayConcat terá um array com os valores constantes em role, level, array e languages
         let arrayConcat = [array.role, array.level];
         arrayConcat = arrayConcat.concat(array.languages, array.tools) //como languages e tools é um array, faço eles serem concatenados em um só array
-        console.log(arrayConcat);
+        //console.log(arrayConcat);
         let filterInArray = Object.assign(array, {filters: arrayConcat}); //object.assign pode atribuir multiplas propriedades em um objeto. Adiciono a key filters com os valores concatenados no array do jobList
-        console.log(filterInArray);
-        return filterInArray //retorno o array com a key adicionada
+        //console.log(filterInArray);
+        return filterInArray //retorno um novo objeto array com a key adicionada
                 
     })
 
