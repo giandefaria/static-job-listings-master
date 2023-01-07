@@ -37,25 +37,16 @@ array();
 export function ResultFilterJob(): any { return ConcatFiltersJobList.filter( (obj) => {
     
     console.log(arrFilters);
+    //function takes an array and a collection of values and checks if the specified values exist in the array.
+    //If the condition is met for all values, the function returns true, otherwise, false is returned.
+    //método every para verificar se o array de filtros consta dentro de includes. Só retornará true no bloco que retornar true em todos os filtros. 
+    //https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
     return arrFilters.every((value: any) => {
         return obj.filters.includes(value);
     });
 } )
 }
 
-//console.log(ResultFilterJob);
-
-//The multipleInArray function takes an array and a collection of values and checks if the specified values exist in the array.
-
-//If the condition is met for all values, the function returns true, otherwise, false is returned.
-//função para verificar multiplos valores dentro de um array
-//https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
-function multipleInArray(arr: any, values: any) {
-    return values.every((value: any) => {
-      return arr.filters.includes(value);
-    });
-}
-    
 
 
 // ===========Original
