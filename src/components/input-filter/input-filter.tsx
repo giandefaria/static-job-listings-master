@@ -70,8 +70,17 @@ function removeFilterOnClick() {
         filter[index].addEventListener('click', () => {
             filter[index].parentElement?.remove(); //o filtro ao ser clicado será excluída a div principal
             console.log(filterName[index].innerHTML); //capturo o nome do filtro excluído para que eu possa localizá-lo e retirá-lo do arrFilters
-            let indexDeletedFilterInArrFilters  = arrFilters.indexOf(filterName[index].innerHTML);
-            console.log(indexDeletedFilterInArrFilters);
+            let indexDeletedFilterInArrFilters = arrFilters.indexOf(filterName[index].innerHTML); //capturo o índice do filtro excluído dentro do array arrFilters, e atribuo esse índice a variável indexDeletedFilterInArrFilters 
+
+            //se o valor constante no índice indicado dentro do array, for igual ao filtro clicado, então poderá excluir o conteúdo desse índice.
+            //essa condicional foi criada por causa de um bug. Caso eu excluísse o primeiro item do array, o for continuava repetindo o código até excluir todos os valores dentro do array.
+            //agora, quando verifica que o valor do array não é igual ao do filtro clicado, ele não apaga mais nenhum índice do array.
+            if (arrFilters[indexDeletedFilterInArrFilters] == filterName[index].innerHTML) {
+                arrFilters.splice(indexDeletedFilterInArrFilters, 1);
+                list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez.    
+                AddJobList(ResultFilterJob(), list);
+            } else { return }
+            
         })
         
     }
