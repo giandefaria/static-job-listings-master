@@ -22,16 +22,6 @@ const ConcatFiltersJobList =
 
 console.log (ConcatFiltersJobList)
 
-let arrayLinguagem = ['JavaScript', 'Python']
-function array() {   
-    for (let index = 0; index < ConcatFiltersJobList.length; index++) {
-        
-        console.log(multipleInArray(ConcatFiltersJobList[index], arrayLinguagem)); //verifico se cada array constante em um índice de filtros batte com o valor de arrayLinguagem
-        
-    }
-} 
-array();
-
 
 //fará um filtro do jobList com os filtros já concatenados, retornando o bloco em que a key filters contenha os valores dentro de arrayFilters
 export function ResultFilterJob(): any { return ConcatFiltersJobList.filter( (obj) => {
