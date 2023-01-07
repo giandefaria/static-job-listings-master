@@ -65,9 +65,11 @@ export function clearAll() {
 function removeFilterOnClick() {
 
     let filter = document.querySelectorAll('.close-button'); //cria a variável que selecionará todos os elementos com a classe 'close-button'
+    let filterName = document.querySelectorAll('.selected-filter')
     for (let index = 0; index < filter.length; index++) {
         filter[index].addEventListener('click', () => {
             filter[index].parentElement?.remove(); //o filtro ao ser clicado será excluída a div principal
+            console.log(filterName[index].innerHTML);
         })
         
     }
