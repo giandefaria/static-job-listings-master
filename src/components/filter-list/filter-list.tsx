@@ -1,6 +1,6 @@
 import { jobList } from '../json-file/data'
 
-export let arrFilters: any = [];
+export let arrFilters: Array<any> = [];
 
 //concatenar tools, language, role, e level em um array que será atribuída na key chamada filters
 const ConcatFiltersJobList =
