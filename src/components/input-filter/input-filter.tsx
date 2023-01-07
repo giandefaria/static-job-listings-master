@@ -54,6 +54,8 @@ export function clearAll() {
     filter.innerHTML = ""
     clearAllFilter.innerHTML = ""
     filterContent.classList.remove('filters-content-active'); //removo a classe active
+    arrFilters.splice(0, arrFilters.length); //limpar o arr filters, partindo da posição 0 até o tamanho do array;
+    console.log(arrFilters);
 }
 
 //função que montará um array com os filtros adicionados, e ao ser clicado, excluirá a div classe tag-and-button

@@ -22,11 +22,12 @@ const ConcatFiltersJobList =
 //fará um filtro do jobList com os filtros já concatenados, retornando o bloco em que a key filters contenha os valores dentro de arrayFilters
 export function ResultFilterJob(): any { return ConcatFiltersJobList.filter( (obj) => {
     
-    console.log(arrFilters);
+    
     //function takes an array and a collection of values and checks if the specified values exist in the array.
     //If the condition is met for all values, the function returns true, otherwise, false is returned.
     //método every para verificar se o array de filtros consta dentro de includes. Só retornará true no bloco que retornar true em todos os filtros. 
     //https://bobbyhadz.com/blog/javascript-check-if-multiple-values-exist-in-array
+    //console.log(arrFilters);
     return arrFilters.every((value: any) => {
         return obj.filters.includes(value);
     });
