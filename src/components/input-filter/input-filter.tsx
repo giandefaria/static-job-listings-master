@@ -2,6 +2,7 @@ import { arrFilters, ResultFilterJob} from '../filter-list/filter-list'
 import { AddJobList } from '../input-list/input-list'
 import { clearAllFilter, filter, filterContent } from '../main/main'
 
+let list: HTMLElement;
 //export let testeFilters: any = []
 
 //função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do índice daquela tag, informações necessárias para especificar qual a tag clicada. Função executada no arquivo input-list.tsx
@@ -32,7 +33,7 @@ export function createFilter(tags: any, i : number) {
 
         createClearAllFilterContent(); //cria o elemento 'clear' no html
         removeFilterOnClick(); //executarei a função para atualizar o array de filtros
-        const list = document.querySelector('.list') as HTMLElement;
+        list = document.querySelector('.list') as HTMLElement;
         list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez. A repetição dupla é causada pelo react.strictmode localizado no index.tsx
         //AddJobList(ResultFilter, list);//adiciono lista filtrada
         AddJobList(ResultFilterJob(), list);
@@ -55,6 +56,8 @@ export function clearAll() {
     clearAllFilter.innerHTML = ""
     filterContent.classList.remove('filters-content-active'); //removo a classe active
     arrFilters.splice(0, arrFilters.length); //limpar o arr filters, partindo da posição 0 até o tamanho do array;
+    list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez.    
+    AddJobList(ResultFilterJob(), list);
     console.log(arrFilters);
 }
 
