@@ -69,7 +69,9 @@ function removeFilterOnClick() {
     for (let index = 0; index < filter.length; index++) {
         filter[index].addEventListener('click', () => {
             filter[index].parentElement?.remove(); //o filtro ao ser clicado será excluída a div principal
-            console.log(filterName[index].innerHTML);
+            console.log(filterName[index].innerHTML); //capturo o nome do filtro excluído para que eu possa localizá-lo e retirá-lo do arrFilters
+            let indexDeletedFilterInArrFilters  = arrFilters.indexOf(filterName[index].innerHTML);
+            console.log(indexDeletedFilterInArrFilters);
         })
         
     }
