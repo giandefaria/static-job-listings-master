@@ -37,24 +37,3 @@ export function ResultFilterJob(): any { return ConcatFiltersJobList.filter( (ob
 } )
 }
 
-
-
-// ===========Original
-export const ResultFilter = jobList.filter(filterlist)
-console.log(ResultFilter);
-
-export function filterlist(array: any) {
-    //console.log(array);
-    //return array.languages == "JavaScript" ;
-    const searchValueInArray = 
-    
-        
-        array.languages &&
-        array.languages.includes(arrFilters[0]) && 
-        array.languages.includes(arrFilters[1]);
-    //const searchValueInArray = array.languages.some(['JavaScript','HTML']); 
-    console.log(searchValueInArray);
-    return searchValueInArray;
-    
-
-}; 
