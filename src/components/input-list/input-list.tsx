@@ -1,7 +1,6 @@
 
 //aqui estou criando uma arrow função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista de empresas.
 import '../input-filter/input-filter'
-import { useEffect } from "react";
 import { createFilter } from '../input-filter/input-filter';
 
 let stack: NodeListOf<Element>;
