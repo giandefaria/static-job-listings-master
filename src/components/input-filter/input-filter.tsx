@@ -4,7 +4,7 @@ import { clearAllFilter, filter, filterContent } from '../main/main'
 
 //export let testeFilters: any = []
 
-//função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do índice daquela tag, informações necessárias para especificar qual a tag clicada.
+//função para adicionar um parágrafo no campo filtro. Receberá o parâmetro da TAG e o número do índice daquela tag, informações necessárias para especificar qual a tag clicada. Função executada no arquivo input-list.tsx
 export function createFilter(tags: any, i : number) {
     
     let tagOnList = false //variável se a tag selecionada já existe na lista ou não
