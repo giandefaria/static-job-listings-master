@@ -39,7 +39,9 @@ O próximo desafio foi adicionar mais de um filtro. Para isso, foi criada a fun�
 Os principais arquivos do projeto são: 
 * main.tsx => Responsável pela tipagem html da página, além da execução da renderização inicial da lista na página
 * data.tsx => arquivo onde consta o objeto em Json com a lista das ofertas de emprego, contendo as informações de cada oferta
-
+* input-list.tsx => responsável por adicionar a lista constante em data.tsx no html da página, criando os elementos do html necessários para a criação de cada "caixa" de oferta de emprego
+* input-filter.tsx => contém a função createFilter(), responsável por adicionar a caixa acima da lista que indica os filtros selecionados, além de adicionar/remover na variável arrFilters[] o filtro selecionado.
+* filter-list.tsx => 
 
 # Visual do projeto <a name="id04"></a>
 
