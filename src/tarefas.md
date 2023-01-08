@@ -9,10 +9,10 @@
 - [X] importar o título da vaga do json
 - [X] importar os dados da data, tempo de serviço e localização
 - [x] ao clicar em alguma tag, adiciona ela no campo de tags
-- [] adicionar função que remove individualmente o filtro ao clicar no button com o X.
-- [] crio uma constante para filtragem, que terá o parametro da informação que quero que seja filtrada
-- [] será indicada a função de addicionar na lista, mas no primeiro parmaetro não será o array, e sim o nome da constante do filtro.
+- [X] adicionar função que remove individualmente o filtro ao clicar no button com o X.
+- [X] crio uma função para filtragem, que terá o parametro da informação que quero que seja filtrada
+- [X] será indicada a função de adicionar na lista, mas no primeiro parmaetro não será o array, e sim o nome da constante do filtro.
 - [X] fazer a página criar essa lista automaticamente 
-- [] Ao clicar no filtro, mostrar apenas as empresas que possuam essas informações
-- [] Ao clicar no filtro, deverá abrir uma nova caixa no campo filters. Terei a opção de excluir determinado filtro ou limpar todos ao clicar em clear. Só deverá aparecer os ítens que deem match com o filtro.
-- [] as divs com features true terão uma borda diferenciada. 
+- [X] Ao clicar no filtro, mostrar apenas as empresas que possuam essas informações
+- [X] Ao clicar no filtro, deverá abrir uma nova caixa no campo filters. Terei a opção de excluir determinado filtro ou limpar todos ao clicar em clear. Só deverá aparecer os ítens que deem match com o filtro.
+- [X] as divs com features true terão uma borda diferenciada. 
