@@ -58,7 +58,7 @@ export function clearAll() {
     arrFilters.splice(0, arrFilters.length); //limpar o arr filters, partindo da posição 0 até o tamanho do array;
     list.innerHTML= '' //limpo o html a cada chamada da função, para evitar bugs causados pela execução da função addjoblist mais de uma vez.    
     AddJobList(ResultFilterJob(), list);
-    console.log(arrFilters);
+    //console.log(arrFilters);
 }
 
 //função que montará um array com os filtros adicionados, e ao ser clicado, excluirá a div classe tag-and-button
