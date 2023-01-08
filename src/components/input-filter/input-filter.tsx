@@ -25,7 +25,7 @@ export function createFilter(tags: any, i : number) {
             selectedfilter.className = 'selected-filter';
         
         arrFilters.push(tags[i].innerHTML) //adiciono o filtro selecionado dentro da variável filters
-        console.log(arrFilters);    
+        //console.log(arrFilters);    
 
         filter.appendChild(createDiv); //esse nova div será criada dentro do elemento de classe filter
         createDiv.appendChild(selectedfilter);//esse novo parágrafo será criado dentro da div
@@ -69,7 +69,7 @@ function removeFilterOnClick() {
     for (let index = 0; index < filter.length; index++) {
         filter[index].addEventListener('click', () => {
             filter[index].parentElement?.remove(); //o filtro ao ser clicado será excluída a div principal
-            console.log(filterName[index].innerHTML); //capturo o nome do filtro excluído para que eu possa localizá-lo e retirá-lo do arrFilters
+            //console.log(filterName[index].innerHTML); //capturo o nome do filtro excluído para que eu possa localizá-lo e retirá-lo do arrFilters
             let indexDeletedFilterInArrFilters = arrFilters.indexOf(filterName[index].innerHTML); //capturo o índice do filtro excluído dentro do array arrFilters, e atribuo esse índice a variável indexDeletedFilterInArrFilters 
 
             //se o valor constante no índice indicado dentro do array, for igual ao filtro clicado, então poderá excluir o conteúdo desse índice.
