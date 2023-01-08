@@ -18,9 +18,10 @@
 
 - [Proposta do projeto](#id01)
 - [Desafios](#id02)
-- [Visual do projeto](#id03)
-- [Feito com](#id04)
-- [Procedimento de instalação](#id05)
+- [Visual do projeto](#id04)
+- [Feito com](#id05)
+- [Procedimento de instalação](#id06)
+- [Autor](#id07)
 
 # Proposta do projeto <a name="id01"></a>
 
@@ -32,10 +33,12 @@ A proposta desse projeto consiste em montar uma página que possui uma lista de 
 
 Uma dificuldade que encontrada no seu desenvolvimento foi para filtrar a lista de empregos utilizando mais de um filtro. O primeiro passo foi utilizar o método map() para concatenar todos os filtros constantes no objeto em Json em uma única key, a qual denominei como "filters". Para isso utilizei o método concat() e Object.assign() para retornar o objeto com a adição da key "filters" em cada índice.
 
-O próximo desafio foi adicionar mais de um filtro. Para isso, foi criada a função ResultFilterJob(), a qual retornará o objeto já concatenado com a key "filters", que será devidamente filtrado. E como regra de filtro dessa lista, tive que combinar o retorno de dois métodos, o every() e includes().  
+O próximo desafio foi adicionar mais de um filtro. Para isso, foi criada a função ResultFilterJob(), a qual retornará o objeto já concatenado com a key "filters", que será devidamente filtrado. E como regra de filtro dessa lista, tive que combinar o retorno de dois métodos, o every() e includes().
+
+# Desafios <a name="id03"> </a>
 
 
-# Visual do projeto <a name="id03"></a>
+# Visual do projeto <a name="id04"></a>
 
 <p align="center">
 
@@ -54,7 +57,7 @@ src="./src/assets/design/mobile-design.jpg"
 />
 </p>
 
-# 🛠 Feito com <a name="id04"></a>
+# 🛠 Feito com <a name="id05"></a>
 
 <br />
 
@@ -64,7 +67,7 @@ src="./src/assets/design/mobile-design.jpg"
 
 <br />
 
-# 📝 Procedimentos de instalação <a name="id05"></a>
+# 📝 Procedimentos de instalação <a name="id06"></a>
 
 <br />
 
@@ -84,7 +87,7 @@ yarn install
 
 <br />
 
-# Autor <a name="id06"></a>
+# Autor <a name="id07"></a>
 
 <br />
 
