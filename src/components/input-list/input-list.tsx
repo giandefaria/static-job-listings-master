@@ -1,5 +1,3 @@
-
-//aqui estou criando uma arrow função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista de empresas.
 import '../input-filter/input-filter'
 import { createFilter } from '../input-filter/input-filter';
 
@@ -10,6 +8,7 @@ let tools: NodeListOf<Element>;
 
 
 //no arquivo main.tsx foi indicado o objeto em json constante em data.tsx e o elemento do html com classe 'list'
+//aqui estou criando uma arrow função, que receberá como parâmetros um array e um elemento do html, onde será introduzido a lista de empresas.
 export const AddJobList = (array: Array<any>, element: HTMLElement) => {
     //faço um map do array indicado como parâmetro. Para cada indice do array, será executada a arrow function, que receberá o parametro item.
     array.map(itemArray => {
