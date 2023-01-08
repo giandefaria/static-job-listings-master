@@ -34,6 +34,8 @@ Uma dificuldade que encontrada no seu desenvolvimento foi para filtrar a lista d
 
 O próximo desafio foi adicionar mais de um filtro. Para isso, foi criada a função ResultFilterJob(), a qual retornará o objeto já concatenado com a key "filters", que será devidamente filtrado. E como regra de filtro dessa lista, tive que combinar o retorno de dois métodos, o every() e includes().
 
+O arquivo que contém esses códigos encontra-se em filter-list.tsx.
+
 # Arquivos do projeto <a name="id03"> </a>
 
 Os principais arquivos do projeto são: 
@@ -41,7 +43,7 @@ Os principais arquivos do projeto são:
 * data.tsx => arquivo onde consta o objeto em Json com a lista das ofertas de emprego, contendo as informações de cada oferta
 * input-list.tsx => responsável por adicionar a lista constante em data.tsx no html da página, criando os elementos do html necessários para a criação de cada "caixa" de oferta de emprego
 * input-filter.tsx => contém a função createFilter(), responsável por adicionar a caixa acima da lista que indica os filtros selecionados, além de adicionar/remover na variável arrFilters[] o filtro selecionado.
-* filter-list.tsx => 
+* filter-list.tsx => arquivo onde ocorre a concatenação dos filtros de cada índice do objeto, e o filtro dessa nova lista concatenada por meio de multiplos filtros. 
 
 # Visual do projeto <a name="id04"></a>
 
