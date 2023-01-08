@@ -18,6 +18,7 @@
 
 - [Proposta do projeto](#id01)
 - [Desafios](#id02)
+- [Arquivos do projeto](#id03)
 - [Visual do projeto](#id04)
 - [Feito com](#id05)
 - [Procedimento de instalação](#id06)
