@@ -140,6 +140,7 @@ span {
     display: flex;
     color: hsl(180, 8%, 52%);
     font-weight: 600;
+    list-style: none;
 }
 
 .dot {

@@ -27,9 +27,9 @@ export const AddJobList = (array: Array<any>, element: HTMLElement) => {
                         <h1 class="company-name">${itemArray.company}</h1> ${verifNew()} ${verifFeatured()}
                     </div>
                     <h2 class="position-name">${itemArray.position}</h2>
-                    <div class="information">
+                    <ul class="information">
                         <li>${itemArray.postedAt}</li> <li class="dot">${itemArray.contract}</li> <li class="dot">${itemArray.location}</li>
-                    </div>    
+                    </ul>    
                 </div>
             </section>
             ` //estou adicionando uma template string no innerHTML
