@@ -36,8 +36,8 @@ export default function Principal() {
 
                 </section>
 
-                <section className='list'>
-                </section>
+                <ul className='list'>
+                </ul>
             
             </main>
      </>
