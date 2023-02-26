@@ -1,15 +1,15 @@
 <p align="center">
   <image
-  src="https://img.shields.io/github/languages/count/giandefaria/ip-address-tracker-master"
+  src="https://img.shields.io/github/languages/count/giandefaria/static-job-listings-master"
   />
   <image
-  src="https://img.shields.io/github/languages/top/giandefaria/ip-address-tracker-master"
+  src="https://img.shields.io/github/languages/top/giandefaria/static-job-listings-master"
   />
   <image
-  src="https://img.shields.io/github/last-commit/giandefaria/ip-address-tracker-master"
+  src="https://img.shields.io/github/last-commit/giandefaria/static-job-listings-master"
   />
   <image
-  src="https://img.shields.io/github/watchers/giandefaria/ip-address-tracker-master"
+  src="https://img.shields.io/github/watchers/giandefaria/static-job-listings-master"
   />
 </p>
 
@@ -82,7 +82,7 @@ src="./src/assets/design/mobile-design.jpg"
 Clone este repositório usando o comando:
 
 ```bash
-git clone https://github.com/giandefaria/ip-address-tracker-master.git
+git clone https://github.com/giandefaria/static-job-listings-master.git
 ```
 
 Na pasta do projeto instale as dependências com uso do npm ou yarn
